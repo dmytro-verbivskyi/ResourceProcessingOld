@@ -29,6 +29,9 @@
         <module name="ResourceProcessing" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ResourceProcessing" target="1.6" />
+    </bytecodeTargetLevel>
   </component>
 </project>
 
