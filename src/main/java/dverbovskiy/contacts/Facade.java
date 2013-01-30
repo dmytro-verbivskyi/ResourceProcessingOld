@@ -9,9 +9,7 @@ import dverbovskiy.util.DebugUtil;
 import org.apache.log4j.Logger;
 
 import javax.ws.rs.*;
-import javax.ws.rs.core.Context;
-import javax.ws.rs.core.MultivaluedMap;
-import javax.ws.rs.core.UriInfo;
+import javax.ws.rs.core.*;
 
 @Path("contacts")
 public class Facade {
@@ -30,7 +28,14 @@ public class Facade {
         return ("get");
     }
 
-
+    @POST
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Response post(String inputData) {
+        log.debug(DebugUtil.START);
+        log.debug(inputData);
+        log.debug(DebugUtil.END);
+        return Response.status(201).entity("").build();
+    }
 
     @PUT
     @Produces("text/html")
