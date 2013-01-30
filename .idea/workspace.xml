@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab383108-3c0e-4e02-bf49-9d28a7b57c34" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dverbovskiy/util/DebugUtil.java" />
-      <change type="DELETED" beforePath="D:\Work\.Idea\2013-02_workspace\ResourceProcessing\src\main\java\dverbovskiy\util\DebugUtil\DebugUtil.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dverbovskiy/contacts/Facade.java" afterPath="$PROJECT_DIR$/src/main/java/dverbovskiy/contacts/Facade.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ResourceProcessing.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1359546682116" ignored="false" />
+    <file path="/Dummy.txt" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1359546992325" ignored="false" />
     <file path="/index.jsp" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1359481289782" ignored="false" />
     <file path="$PROJECT_DIR$/../simple-webapp/src/main/webapp/index.jsp" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1359475078896" ignored="false" />
     <file path="/Facade.java" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1359546760189" ignored="false" />
@@ -71,7 +69,7 @@
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/dverbovskiy/contacts/Facade.java" line="21" class="dverbovskiy.contacts.Facade" package="dverbovskiy.contacts">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/dverbovskiy/contacts/Facade.java" line="23" class="dverbovskiy.contacts.Facade" package="dverbovskiy.contacts">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -85,7 +83,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/dverbovskiy/contacts/Facade.java" line="27" class="dverbovskiy.contacts.Facade" package="dverbovskiy.contacts">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/dverbovskiy/contacts/Facade.java" line="29" class="dverbovskiy.contacts.Facade" package="dverbovskiy.contacts">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -112,7 +110,7 @@
       <file leaf-file-name="Facade.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/dverbovskiy/contacts/Facade.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="0" selection-start="742" selection-end="1214" vertical-scroll-proportion="0.6071775">
+            <state line="41" column="39" selection-start="911" selection-end="911" vertical-scroll-proportion="0.81524926">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -782,7 +780,11 @@
       <created>1359546688486</created>
       <updated>1359546688486</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="restructured util package, there was a wrong name">
+      <created>1359546938607</created>
+      <updated>1359546938607</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -800,7 +802,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923368" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33017975" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33017975" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -854,7 +856,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="util package and DebugUtil class" />
+    <option name="LAST_COMMIT_MESSAGE" value="added and stubs of Get/Post/Put/Delete" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -875,6 +877,8 @@
     <MESSAGE value="simpliest GET method implemented" />
     <MESSAGE value="update jsp about purposes of this project" />
     <MESSAGE value="util package and DebugUtil class" />
+    <MESSAGE value="restructured util package, there was a wrong name" />
+    <MESSAGE value="added and stubs of Get/Post/Put/Delete" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1002,7 +1006,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dverbovskiy/contacts/Facade.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="0" selection-start="742" selection-end="1214" vertical-scroll-proportion="0.6071775">
+        <state line="41" column="39" selection-start="911" selection-end="911" vertical-scroll-proportion="0.81524926">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

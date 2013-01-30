@@ -5,11 +5,10 @@ package dverbovskiy.contacts;
  * User: dverbovskiy
  */
 
+import dverbovskiy.util.DebugUtil;
 import org.apache.log4j.Logger;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
+import javax.ws.rs.*;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MultivaluedMap;
 import javax.ws.rs.core.UriInfo;
@@ -21,13 +20,31 @@ public class Facade {
     @GET
     @Produces("text/html")
     public String get(@Context UriInfo ui) {
-        log.debug("get has started");
+        log.debug(DebugUtil.START);
         MultivaluedMap<String, String> params = ui.getQueryParameters();
 
         if (params.containsKey("list")) {
 
         }
-        log.debug("get has ended");
+        log.debug(DebugUtil.END);
         return ("get");
+    }
+
+
+
+    @PUT
+    @Produces("text/html")
+    public String put(/*@Context UriInfo ui*/) {
+        log.debug(DebugUtil.START);
+        log.debug(DebugUtil.END);
+        return ("put");
+    }
+
+    @DELETE
+    @Produces("text/html")
+    public String delete(/*@Context UriInfo ui*/) {
+        log.debug(DebugUtil.START);
+        log.debug(DebugUtil.END);
+        return ("delete");
     }
 }
