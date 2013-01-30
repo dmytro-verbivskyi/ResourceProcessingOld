@@ -5,6 +5,7 @@ package dverbovskiy.contacts;
  * User: dverbovskiy
  */
 
+
 import dverbovskiy.util.DebugUtil;
 import org.apache.log4j.Logger;
 
@@ -30,16 +31,17 @@ public class Facade {
 
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
-    public Response post(String inputData) {
+    public Response post(String input) {
         log.debug(DebugUtil.START);
-        log.debug(inputData);
+        log.debug("RawInput:" + input);
+
         log.debug(DebugUtil.END);
         return Response.status(201).entity("").build();
     }
 
     @PUT
     @Produces("text/html")
-    public String put(/*@Context UriInfo ui*/) {
+    public String put() {
         log.debug(DebugUtil.START);
         log.debug(DebugUtil.END);
         return ("put");
@@ -47,7 +49,7 @@ public class Facade {
 
     @DELETE
     @Produces("text/html")
-    public String delete(/*@Context UriInfo ui*/) {
+    public String delete() {
         log.debug(DebugUtil.START);
         log.debug(DebugUtil.END);
         return ("delete");
