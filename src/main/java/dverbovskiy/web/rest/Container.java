@@ -17,7 +17,7 @@ public class Container extends JSONObject {
         super();
     }
 
-    public static Container deserialize(String input) throws Exception {
+    public static Container getInstance(String input) throws Exception {
         JSONParser parser = new JSONParser();
         Container container = new Container();
 
@@ -26,6 +26,10 @@ public class Container extends JSONObject {
         container.put(CMD, getMandatory(jsonObject, CMD));
         container.put(DATA, getMandatory(jsonObject, DATA));
         container.put(OPTIONS, getMandatory(jsonObject, OPTIONS));
+
+        //Object o1 = container.getByPath("cmd");
+        //Object o3 = container.getByPath("data.id");
+        //Object o4 = container.getByPath("data.idy.requestId");
 
         return container;
     }
@@ -43,5 +47,18 @@ public class Container extends JSONObject {
             throw new Exception("\"" + label + "\" parameter is mandatory, even if it is empty");
         }
         return buffer;
+    }
+
+    public Object getByPath(String fullPath) {
+        Object goal = this;
+        log.debug("fullPath: " + fullPath);
+
+        for (String path : fullPath.split("\\.")) {
+            if (goal == null) {
+                break;
+            }
+            goal = ((JSONObject) goal).get(path);
+        }
+        return goal;
     }
 }

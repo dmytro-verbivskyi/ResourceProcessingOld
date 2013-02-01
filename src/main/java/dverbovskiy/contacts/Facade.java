@@ -37,7 +37,7 @@ public class Facade {
         log.debug("RawInput:" + input);
 
         try {
-            Container container = Container.deserialize(input);
+            Container container = Container.getInstance(input);
 
             container.clear();
         } catch (Exception e) {
