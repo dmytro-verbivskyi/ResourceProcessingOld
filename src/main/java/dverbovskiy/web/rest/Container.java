@@ -27,7 +27,7 @@ public class Container extends JSONObject {
         container.put(DATA, getMandatory(jsonObject, DATA));
         container.put(OPTIONS, getMandatory(jsonObject, OPTIONS));
 
-        //Object o1 = container.getByPath("cmd");
+        Object o1 = container.get("cmd");
         //Object o3 = container.getByPath("data.id");
         //Object o4 = container.getByPath("data.idy.requestId");
 
@@ -49,7 +49,14 @@ public class Container extends JSONObject {
         return buffer;
     }
 
-    public Object getByPath(String fullPath) {
+    @Override
+    public Object get(Object key) {
+        return super.get(key);    //To change body of overridden methods use File | Settings | File Templates.
+    }
+
+
+/*    @Override
+    public Object get(String fullPath) {
         Object goal = this;
         log.debug("fullPath: " + fullPath);
 
@@ -60,5 +67,5 @@ public class Container extends JSONObject {
             goal = ((JSONObject) goal).get(path);
         }
         return goal;
-    }
+    }*/
 }

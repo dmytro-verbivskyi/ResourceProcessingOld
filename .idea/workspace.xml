@@ -3,14 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="ab383108-3c0e-4e02-bf49-9d28a7b57c34" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dverbovskiy/web/rest/Container.java" afterPath="$PROJECT_DIR$/src/main/java/dverbovskiy/web/rest/Container.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dverbovskiy/contacts/Facade.java" afterPath="$PROJECT_DIR$/src/main/java/dverbovskiy/contacts/Facade.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ResourceProcessing.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="contacts-debug.log" />
     <ignored path="contacts.log" />
-    <file path="/Dummy.txt" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1359743805227" ignored="false" />
+    <file path="/Dummy.txt" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1359743880796" ignored="false" />
     <file path="/index.jsp" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1359481289782" ignored="false" />
     <file path="$PROJECT_DIR$/../simple-webapp/src/main/webapp/index.jsp" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1359475078896" ignored="false" />
     <file path="/Facade.java" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1359738585331" ignored="false" />
@@ -22,7 +21,7 @@
     <file path="/IdContainer.java" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1359561293425" ignored="false" />
     <file path="/fragment.java" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1359743098568" ignored="false" />
     <file path="/FlexiContainer.java" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1359738674028" ignored="false" />
-    <file path="/Container.java" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1359743494030" ignored="false" />
+    <file path="/Container.java" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1359744776300" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +113,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/dverbovskiy/web/rest/Container.java" line="59" class="dverbovskiy.web.rest.Container" package="dverbovskiy.web.rest">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/dverbovskiy/web/rest/Container.java" line="66" class="dverbovskiy.web.rest.Container" package="dverbovskiy.web.rest">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -128,7 +127,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/dverbovskiy/web/rest/Container.java" line="61" class="dverbovskiy.web.rest.Container" package="dverbovskiy.web.rest">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/dverbovskiy/web/rest/Container.java" line="68" class="dverbovskiy.web.rest.Container" package="dverbovskiy.web.rest">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -215,10 +214,19 @@
       <file leaf-file-name="Container.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/dverbovskiy/web/rest/Container.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="35" selection-start="861" selection-end="861" vertical-scroll-proportion="0.35869566">
+            <state line="48" column="31" selection-start="1674" selection-end="1674" vertical-scroll-proportion="0.16983895">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HashMap.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.6.0_31/src.zip!/java/util/HashMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="317" column="14" selection-start="12460" selection-end="12460" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -554,6 +562,7 @@
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Modules" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="292" />
+    <property name="OverrideImplement.combined" value="false" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="292" />
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -862,7 +871,11 @@
       <created>1359739300269</created>
       <updated>1359739300269</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Object o4 = container.getByPath(&quot;data.idy.requestId&quot;) functionality">
+      <created>1359743885935</created>
+      <updated>1359743885936</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -892,7 +905,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23462631" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923368" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32923368" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3434248" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -901,7 +914,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.6565752" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923368" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19205298" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="-1897" y="498" width="1874" height="203" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19205298" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="-1897" y="498" width="1874" height="203" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923368" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -1070,13 +1083,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.6.0_31/src.zip!/java/util/HashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="44" selection-start="5215" selection-end="5215" vertical-scroll-proportion="0.38043478">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/contacts.log">
       <provider selected="true" editor-type-id="text-editor">
         <state line="206" column="71" selection-start="22758" selection-end="22759" vertical-scroll-proportion="0.0">
@@ -1100,9 +1106,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.6.0_31/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="317" column="14" selection-start="12460" selection-end="12460" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dverbovskiy/web/rest/Container.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="35" selection-start="861" selection-end="861" vertical-scroll-proportion="0.35869566">
+        <state line="48" column="31" selection-start="1674" selection-end="1674" vertical-scroll-proportion="0.16983895">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
