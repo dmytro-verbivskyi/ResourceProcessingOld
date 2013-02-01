@@ -24,8 +24,11 @@ public class FlexiContainer {
         JSONObject jsonObject = (JSONObject) parser.parse(input);
 
         flexiContainer.setCmd(jsonObject);
+        log.debug("\"" + CMD + "\": " + flexiContainer.getCmd());
         flexiContainer.setContainer(jsonObject);
+        log.debug("\"" + CONTAINER + "\": " + flexiContainer.getContainer().toJSONString());
         flexiContainer.setOptions(jsonObject);
+        log.debug("\"" + OPTIONS + "\": " + flexiContainer.getOptions().toJSONString());
         return flexiContainer;
     }
 
@@ -34,9 +37,7 @@ public class FlexiContainer {
     }
 
     public void setCmd(JSONObject jsonObject) throws Exception {
-        int a = 8;
-        //tryGetAndParseObj(jsonObject, CMD);
-        //this.cmdValue = (String) tryGetAndParseObj(jsonObject, CMD);
+        this.cmdValue = (String) tryGetAndParse(jsonObject, CMD);
     }
 
     public JSONObject getContainer() {
@@ -44,7 +45,7 @@ public class FlexiContainer {
     }
 
     public void setContainer(JSONObject jsonObject) throws Exception {
-        this.containerValue = tryGetAndParse(jsonObject, CONTAINER);
+        this.containerValue = (JSONObject) tryGetAndParse(jsonObject, CONTAINER);
     }
 
     public JSONObject getOptions() {
@@ -52,22 +53,21 @@ public class FlexiContainer {
     }
 
     public void setOptions(JSONObject jsonObject) throws Exception {
-        this.optionsValue = tryGetAndParse(jsonObject, OPTIONS);
+        this.optionsValue = (JSONObject) tryGetAndParse(jsonObject, OPTIONS);
     }
 
-    private static JSONObject tryGetAndParse(JSONObject jsonObject, String label) throws Exception {
-        Object temp;
+    private static Object tryGetAndParse(JSONObject jsonObject, String label) throws Exception {
+        Object buffer;
 
         if (!(CMD.equals(label) || CONTAINER.equals(label) || OPTIONS.equals(label))) {
             throw new Exception("\"" + label + "\" is unknown parameter");
         }
 
         if (jsonObject.containsKey(label)) {
-            temp = jsonObject.get(label);
-            log.debug("\"" + label + "\":" + ((JSONObject) temp).toJSONString());
+            buffer = jsonObject.get(label);
         } else {
             throw new Exception("\"" + label + "\" parameter is mandatory, even if it is empty");
         }
-        return (JSONObject) temp;
+        return buffer;
     }
 }
