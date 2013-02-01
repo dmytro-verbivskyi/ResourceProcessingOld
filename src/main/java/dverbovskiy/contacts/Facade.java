@@ -7,8 +7,7 @@ package dverbovskiy.contacts;
 
 
 import dverbovskiy.util.DebugUtil;
-import dverbovskiy.web.rest.FlexiContainer;
-import dverbovskiy.web.rest.IdContainer;
+import dverbovskiy.web.rest.Container;
 import org.apache.log4j.Logger;
 
 import javax.ws.rs.*;
@@ -38,7 +37,9 @@ public class Facade {
         log.debug("RawInput:" + input);
 
         try {
-            FlexiContainer flexiContainer = FlexiContainer.tryParse(input);
+            Container container = Container.tryParse(input);
+
+            container.clear();
         } catch (Exception e) {
             e.printStackTrace();
         }
