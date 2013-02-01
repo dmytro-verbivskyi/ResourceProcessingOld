@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab383108-3c0e-4e02-bf49-9d28a7b57c34" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dverbovskiy/web/rest/FlexiContainer.java" afterPath="$PROJECT_DIR$/src/main/java/dverbovskiy/web/rest/FlexiContainer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ResourceProcessing.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="contacts-debug.log" />
     <ignored path="contacts.log" />
-    <file path="/Dummy.txt" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1359724799835" ignored="false" />
+    <file path="/Dummy.txt" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1359728894150" ignored="false" />
     <file path="/index.jsp" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1359481289782" ignored="false" />
     <file path="$PROJECT_DIR$/../simple-webapp/src/main/webapp/index.jsp" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1359475078896" ignored="false" />
     <file path="/Facade.java" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1359563177674" ignored="false" />
@@ -141,7 +140,7 @@
       <file leaf-file-name="FlexiContainer.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/dverbovskiy/web/rest/FlexiContainer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="29" selection-start="1370" selection-end="1371" vertical-scroll-proportion="0.5838323">
+            <state line="34" column="62" selection-start="1339" selection-end="1339" vertical-scroll-proportion="0.52095807">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -771,7 +770,11 @@
       <created>1359724809238</created>
       <updated>1359724809238</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Smoke implementation of FlexiContainer done">
+      <created>1359728899668</created>
+      <updated>1359728899668</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -863,7 +866,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;container&quot; and &quot;options&quot; now JSONObject" />
+    <option name="LAST_COMMIT_MESSAGE" value="Smoke implementation of FlexiContainer done" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -891,6 +894,7 @@
     <MESSAGE value="great progress CURL erased my quotes from JSON" />
     <MESSAGE value="simple structure of FlexiContainer implemented, parsing &quot;cmd&quot; works well, but &quot;container&quot; and &quot;option&quot; must be JSONObject" />
     <MESSAGE value="&quot;container&quot; and &quot;options&quot; now JSONObject" />
+    <MESSAGE value="Smoke implementation of FlexiContainer done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1014,7 +1018,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dverbovskiy/web/rest/FlexiContainer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="29" selection-start="1370" selection-end="1371" vertical-scroll-proportion="0.5838323">
+        <state line="34" column="62" selection-start="1339" selection-end="1339" vertical-scroll-proportion="0.52095807">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
