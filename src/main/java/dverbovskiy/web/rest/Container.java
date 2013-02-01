@@ -12,54 +12,25 @@ public class Container extends JSONObject {
     public static final String DATA = "data";
     public static final String OPTIONS = "options";
     private static final Logger log = Logger.getLogger(Container.class);
-    private String cmdValue;
-    private JSONObject dataValue;
-    private JSONObject optionsValue;
 
-    private Container(){
+    private Container() {
         super();
     }
 
-    public static Container tryParse(String input) throws Exception {
+    public static Container deserialize(String input) throws Exception {
         JSONParser parser = new JSONParser();
         Container container = new Container();
 
         JSONObject jsonObject = (JSONObject) parser.parse(input);
 
-        container.setCmd(jsonObject);
-        log.debug("\"" + CMD + "\": " + container.getCmd());
-        container.setData(jsonObject);
-        log.debug("\"" + DATA + "\": " + container.getData().toJSONString());
-        container.setOptions(jsonObject);
-        log.debug("\"" + OPTIONS + "\": " + container.getOptions().toJSONString());
+        container.put(CMD, getMandatory(jsonObject, CMD));
+        container.put(DATA, getMandatory(jsonObject, DATA));
+        container.put(OPTIONS, getMandatory(jsonObject, OPTIONS));
+
         return container;
     }
 
-    public String getCmd() {
-        return cmdValue;
-    }
-
-    public void setCmd(JSONObject jsonObject) throws Exception {
-        this.cmdValue = (String) tryGetAndParse(jsonObject, CMD);
-    }
-
-    public JSONObject getData() {
-        return dataValue;
-    }
-
-    public void setData(JSONObject jsonObject) throws Exception {
-        this.dataValue = (JSONObject) tryGetAndParse(jsonObject, DATA);
-    }
-
-    public JSONObject getOptions() {
-        return optionsValue;
-    }
-
-    public void setOptions(JSONObject jsonObject) throws Exception {
-        this.optionsValue = (JSONObject) tryGetAndParse(jsonObject, OPTIONS);
-    }
-
-    private static Object tryGetAndParse(JSONObject jsonObject, String label) throws Exception {
+    private static Object getMandatory(JSONObject jsonObject, String label) throws Exception {
         Object buffer;
 
         if (!(CMD.equals(label) || DATA.equals(label) || OPTIONS.equals(label))) {
