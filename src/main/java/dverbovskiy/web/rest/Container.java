@@ -1,6 +1,7 @@
 package dverbovskiy.web.rest;
 
 import org.apache.log4j.Logger;
+import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
@@ -27,9 +28,17 @@ public class Container extends JSONObject {
         container.put(DATA, getMandatory(jsonObject, DATA));
         container.put(OPTIONS, getMandatory(jsonObject, OPTIONS));
 
-        Object o1 = container.get("cmd");
-        //Object o3 = container.getByPath("data.id");
-        //Object o4 = container.getByPath("data.idy.requestId");
+        JSONArray list = new JSONArray();
+        list.add("msg 1");
+        list.add("msg 2");
+        list.add("msg 3");
+
+        container.put("messages", list);
+
+        //Object o1 = container.give("cmd");
+        //Object o3 = container.give("data.id");
+        //Object o4 = container.give("data.id.requestId");
+        Object o4 = container.give("messages.1");
 
         return container;
     }
@@ -49,23 +58,22 @@ public class Container extends JSONObject {
         return buffer;
     }
 
-    @Override
-    public Object get(Object key) {
-        return super.get(key);    //To change body of overridden methods use File | Settings | File Templates.
-    }
-
-
-/*    @Override
-    public Object get(String fullPath) {
+    public Object give(String fullPath) {
         Object goal = this;
+        fullPath = fullPath.toLowerCase();
         log.debug("fullPath: " + fullPath);
 
         for (String path : fullPath.split("\\.")) {
             if (goal == null) {
                 break;
             }
-            goal = ((JSONObject) goal).get(path);
+            if (goal instanceof JSONArray) {
+                int index = Integer.parseInt(path);
+                //goal =
+            } else {
+                goal = ((JSONObject) goal).get(path);
+            }
         }
         return goal;
-    }*/
+    }
 }

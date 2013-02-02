@@ -43,7 +43,6 @@ public class Facade {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
         log.debug(DebugUtil.END);
         return Response.status(201).entity("").build();
     }
