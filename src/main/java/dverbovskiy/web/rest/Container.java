@@ -5,6 +5,8 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
+import java.lang.reflect.Array;
+
 /**
  * This container is the highest level of processing json data containers
  */
@@ -28,17 +30,10 @@ public class Container extends JSONObject {
         container.put(DATA, getMandatory(jsonObject, DATA));
         container.put(OPTIONS, getMandatory(jsonObject, OPTIONS));
 
-        JSONArray list = new JSONArray();
-        list.add("msg 1");
-        list.add("msg 2");
-        list.add("msg 3");
-
-        container.put("messages", list);
-
-        //Object o1 = container.give("cmd");
-        //Object o3 = container.give("data.id");
-        //Object o4 = container.give("data.id.requestId");
-        Object o4 = container.give("messages.1");
+        /*Object o1 = container.read("CMD");
+        Object o3 = container.read("data.id");
+        Object o4 = container.read("data.ID.requestId");
+        Object o5 = container.read("data.array.3.1");*/
 
         return container;
     }
@@ -58,22 +53,22 @@ public class Container extends JSONObject {
         return buffer;
     }
 
-    public Object give(String fullPath) {
-        Object goal = this;
+    public Object read(String fullPath) {
+        Object node = this;
         fullPath = fullPath.toLowerCase();
         log.debug("fullPath: " + fullPath);
 
         for (String path : fullPath.split("\\.")) {
-            if (goal == null) {
+            if (node == null) {
                 break;
             }
-            if (goal instanceof JSONArray) {
-                int index = Integer.parseInt(path);
-                //goal =
+
+            if (node instanceof JSONArray) {
+                node = ((JSONArray) node).get(Integer.parseInt(path));
             } else {
-                goal = ((JSONObject) goal).get(path);
+                node = ((JSONObject) node).get(path);
             }
         }
-        return goal;
+        return node;
     }
 }
