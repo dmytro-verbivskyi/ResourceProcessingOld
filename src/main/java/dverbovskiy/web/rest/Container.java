@@ -35,6 +35,10 @@ public class Container extends JSONObject {
         Object o4 = container.read("data.ID.requestId");
         Object o5 = container.read("data.array.3.1");*/
 
+        Object o6 = container.write("data.array.12.lol.2", 14);
+
+        //o6 = container.write("data.ID", 98);
+
         return container;
     }
 
@@ -71,4 +75,51 @@ public class Container extends JSONObject {
         }
         return node;
     }
+
+
+    public Object write(String fullPath, Object value) throws Exception {
+        fullPath = fullPath.toLowerCase();
+
+        int lastSeparator = fullPath.lastIndexOf(".");
+        if (lastSeparator == -1) {
+            return super.put(fullPath, value);
+        }
+
+        String parentPath = fullPath.substring(0, lastSeparator);
+        String nodeName = fullPath.substring(lastSeparator + 1);
+
+        Object parent = null;
+        try {
+            parent = read(parentPath);
+        } finally { // if anything went wrong parent will be null
+            if (parent == null) {
+                throw new Exception("Parent location [" + parentPath + "] doesn't exist");
+            }
+        }
+        //TODO parent instanceof JSONArray
+        //TODO parent contains value of int
+        Object r = ((JSONObject) parent).put(nodeName, value);
+        return r;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
