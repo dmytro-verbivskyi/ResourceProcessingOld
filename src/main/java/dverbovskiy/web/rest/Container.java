@@ -88,9 +88,28 @@ public class Container extends JSONObject {
         String parentPath = fullPath.substring(0, lastSeparator);
         String nodeName = fullPath.substring(lastSeparator + 1);
 
-        Object parent = null;
+        JSONObject parent = this;
         try {
-            parent = read(parentPath);
+            String[] path = fullPath.split("\\.");
+
+            for (int i = 0; i < path.length; i++) {
+                if (parent.containsKey(path[i])) {
+                    parent = (JSONObject) parent.get(path[i]);
+                } else {
+                    if (i + 1 < path.length) {
+                        int index = -1;
+
+                        try {
+                            index = Integer.parseInt(path[i + 1]);
+                        } catch (NumberFormatException nfe) {
+                            // ok, then next part is not JSONArray
+                        }
+                    }
+                }
+            }
+
+
+            //parent = read(parentPath);
         } finally { // if anything went wrong parent will be null
             if (parent == null) {
                 throw new Exception("Parent location [" + parentPath + "] doesn't exist");
@@ -100,6 +119,46 @@ public class Container extends JSONObject {
         //TODO parent contains value of int
         Object r = ((JSONObject) parent).put(nodeName, value);
         return r;
+
+        //TODO such agile logic for writing
+        /*o.AddStory( {backlog: { id: 12312 },
+                 storyItem: {
+                    external: {
+                      id: {value: '23423423', a:'23'}
+                    },
+                    title: 'wewerwe'
+                 },
+                 position: { after: {id:'23423'}
+                 }
+               });
+        // true JSON
+        {
+           "backlog":{
+              "id":12312
+           },
+           "storyItem":{
+              "external":{
+                 "id":{
+                    "value":"23423423",
+                    "a":23
+                 }
+              },
+              "title":"wewerwe"
+           },
+           "position":{
+              "after":{
+                 "id":23423
+              }
+           }
+        }
+
+          obj.write("backlog.id", 1341324);
+          obj.write("storyItem.external.id.value", '23423423');
+          obj.write("storyItem.external.id.a", '23');
+          obj.write("storyItem.title", '234234234');
+          obj.write("position.after.id", '23423');
+        */
+
     }
 }
 
