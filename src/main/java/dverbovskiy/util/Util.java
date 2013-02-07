@@ -1,11 +1,8 @@
 package dverbovskiy.util;
 
 /**
- * Created with IntelliJ IDEA.
  * User: dverbovskiy
  * Date: 06.02.13
- * Time: 20:13
- * To change this template use File | Settings | File Templates.
  */
 public class Util {
 

@@ -38,7 +38,7 @@ public class Container extends JSONObject {
         Object o4 = container.read("data.ID.requestId");
         Object o5 = container.read("data.array.3.1");*/
 
-        Object o6 = container.write("data.array.8", 14);
+        Object o6 = container.write("data.array.4", 14);
 
         //o6 = container.write("data.ID", 98);
 
@@ -93,21 +93,25 @@ public class Container extends JSONObject {
                 int index = Integer.parseInt(path);
 
                 if (parent instanceof JSONArray) {
-                    if (((JSONArray) parent).contains(index)) {
-                        // going deeper
-                        parent = ((JSONObject) parent).get(index);
-                    } else {
+                    boolean contains =  ((JSONArray) parent).contains(index);
+
+                    if (!contains) {
                         // adding element for parent[index]
                         int i = ((JSONArray) parent).size();
 
                         if (i < index) {
-                            log.warn("Not proper order of adding values. It's not effective. Size: " + i + "; index : " + index);
+                            log.warn("Not proper order of adding values. It's not effective. Current max index: " + (i - 1) + "; index : " + index);
                         }
                         for (; i < index; i++) {
                             ((JSONArray) parent).add(new JSONObject()); // adding empty object
                         }
                         ((JSONArray) parent).add(index, value);
                     }
+                    // going deeper
+                    parent = ((JSONArray) parent).get(index);
+                }  else {
+                    // modifying JSONObject to JSONArray
+                    int u = 9;
                 }
             } else {
                 parent = ((JSONObject) parent).get(path);
