@@ -80,90 +80,64 @@ public class Container extends JSONObject {
     }
 
     public Object write(String fullPath, Object value) throws Exception {
-        fullPath = fullPath.toLowerCase();
         Object parent = this;
 
-        String[] pathParts = fullPath.split("\\.");
+        String[] pathParts = fullPath.toLowerCase().split("\\.");
+        int limit = pathParts.length - 1;
 
-        for (String path : pathParts) {
+        for (int i = 0; i < limit; i++) {
+            String path = pathParts[i];
             boolean isInt = Util.isInteger(path);
-            // TODO if (path == "-2")
 
-            if (isInt) {
+            if (parent instanceof JSONArray) {
+                JSONArray node = (JSONArray) parent;
                 int index = Integer.parseInt(path);
 
-                if (parent instanceof JSONArray) {
-                    boolean contains =  ((JSONArray) parent).contains(index);
-
-                    if (!contains) {
-                        // adding element for parent[index]
-                        int i = ((JSONArray) parent).size();
-
-                        if (i < index) {
-                            log.warn("Not proper order of adding values. It's not effective. Current max index: " + (i - 1) + "; index : " + index);
-                        }
-                        for (; i < index; i++) {
-                            ((JSONArray) parent).add(new JSONObject()); // adding empty object
-                        }
-                        ((JSONArray) parent).add(index, value);
-                    }
-                    // going deeper
-                    parent = ((JSONArray) parent).get(index);
-                }  else {
-                    // modifying JSONObject to JSONArray
-                    int u = 9;
+                if (index < 0) {
+                    log.warn("Negative array index:" + index + ". It's not effective.");
+                    index = Math.abs(index);
                 }
+
+                if (isInt) {
+                    if (!node.contains(index)) {
+                        // adding elements for parent[index]
+                        int size = node.size();
+
+                        if (size < index) {
+                            log.warn("Not proper order of adding values. It's not effective. Current max index: " + (size - 1) + "; index : " + index);
+                        }
+                        for (; size <= index; size++) {
+                            node.add(new JSONObject()); // adding empty object to array
+                        }
+                    }
+                    parent = node.get(index);       // going deeper
+                } else {
+                    // implying that user wants to work with array[0] element
+                    if (!node.contains(0)) {
+                        // TODO: verify this case
+                        node.add(0, new JSONObject());
+                    }
+                    JSONObject element = (JSONObject) node.get(0);
+
+                    if (!element.containsKey(path)) {
+                        // TODO: verify this case
+                        element.put(path, new JSONObject()); // adding empty object to array[0] element
+                    }
+                    parent = element.get(index);    // going deeper
+                }
+            } else if (parent instanceof JSONObject) {
+                JSONObject node = (JSONObject) parent;
+
+                parent = node.get(path);       // going deeper
             } else {
-                parent = ((JSONObject) parent).get(path);
+                // TODO: verify this case
+                throw new Exception("Unknown type of parent object: " + parent.getClass());
             }
-
         }
-
+        // TODO here and now, we can add value, and return previous value
         return new Object();
 
-        /*fullPath = fullPath.toLowerCase();
-
-        int lastSeparator = fullPath.lastIndexOf(".");
-        if (lastSeparator == -1) {
-            return super.put(fullPath, value);
-        }
-
-        String parentPath = fullPath.substring(0, lastSeparator);
-        String nodeName = fullPath.substring(lastSeparator + 1);
-
-        JSONObject parent = this;
-        try {
-            String[] path = fullPath.split("\\.");
-
-            for (int i = 0; i < path.length; i++) {
-                if (parent.containsKey(path[i])) {
-                    parent = (JSONObject) parent.get(path[i]);
-                } else {
-                    if (i + 1 < path.length) {
-                        int index = -1;
-
-                        try {
-                            index = Integer.parseInt(path[i + 1]);
-                        } catch (NumberFormatException nfe) {
-                            // okey then next part is not JSONArray
-                        }
-                    }
-                }
-            }
-
-
-            //parent = read(parentPath);
-        } finally { // if anything went wrong parent will be null
-            if (parent == null) {
-                throw new Exception("Parent location [" + parentPath + "] doesn't exist");
-            }
-        }
-        //TODO parent instanceof JSONArray
-        //TODO parent contains value of int
-        Object r = ((JSONObject) parent).put(nodeName, value);
-        return r;*/
-
-        //TODO such agile logic for writing
+        // TODO such agile logic for writing
         /*oo.AddStory( {backlog: { id: 12312 },
                  storyItem: {
                     external: {

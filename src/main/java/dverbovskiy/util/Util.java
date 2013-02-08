@@ -23,4 +23,13 @@ public class Util {
         return true;
     }
 
+    public static <T> T as(Class<T> t, Object o) {
+        // gotten from: http://stackoverflow.com/questions/1034204/equivalent-of-the-c-sharp-keyword-as-in-java
+        return t.isInstance(o) ? t.cast(o) : null;
+        /* Usage:
+            MyType a = as(MyType.class, new MyType());  // 'a' is not null
+            MyType b = as(MyType.class, "");            // b is null
+         */
+    }
+
 }
