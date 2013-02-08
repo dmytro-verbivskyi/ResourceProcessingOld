@@ -38,7 +38,7 @@ public class Container extends JSONObject {
         Object o4 = container.read("data.ID.requestId");
         Object o5 = container.read("data.array.3.1");*/
 
-        Object o6 = container.write("data.array.4", 14);
+        Object o6 = container.write("data.1.array.6", 14);
 
         //o6 = container.write("data.ID", 98);
 
@@ -81,22 +81,27 @@ public class Container extends JSONObject {
 
     public Object write(String fullPath, Object value) throws Exception {
         Object parent = this;
+        Object previousValue = null;
 
         String[] pathParts = fullPath.toLowerCase().split("\\.");
-        int limit = pathParts.length - 1;
 
-        for (int i = 0; i < limit; i++) {
+        for (int i = 0; i < pathParts.length; i++) {
             String path = pathParts[i];
             boolean isInt = Util.isInteger(path);
+            boolean isLast = (i + 1 == pathParts.length) ? true : false;
+            int index = -1;
 
-            if (parent instanceof JSONArray) {
-                JSONArray node = (JSONArray) parent;
-                int index = Integer.parseInt(path);
+            if (isInt) {
+                index = Integer.parseInt(path);
 
                 if (index < 0) {
                     log.warn("Negative array index:" + index + ". It's not effective.");
                     index = Math.abs(index);
                 }
+            }
+
+            if (parent instanceof JSONArray) {
+                JSONArray node = (JSONArray) parent;
 
                 if (isInt) {
                     if (!node.contains(index)) {
@@ -110,7 +115,12 @@ public class Container extends JSONObject {
                             node.add(new JSONObject()); // adding empty object to array
                         }
                     }
-                    parent = node.get(index);       // going deeper
+
+                    if (isLast) {
+                        previousValue = node.set(index, value);
+                    } else {
+                        parent = node.get(index);       // going deeper
+                    }
                 } else {
                     // implying that user wants to work with array[0] element
                     if (!node.contains(0)) {
@@ -123,19 +133,39 @@ public class Container extends JSONObject {
                         // TODO: verify this case
                         element.put(path, new JSONObject()); // adding empty object to array[0] element
                     }
-                    parent = element.get(index);    // going deeper
+
+                    if (isLast) {
+                        previousValue = element.put(path, value);
+                    } else {
+                        parent = element.get(path);    // going deeper
+                    }
                 }
             } else if (parent instanceof JSONObject) {
                 JSONObject node = (JSONObject) parent;
 
-                parent = node.get(path);       // going deeper
+                if (isInt) {
+                    // TODO Создаем JSONArray. В JSONArray[0] ложим текущее СОДЕРЖИМОЕ node(он же parent) JSONObject, а
+                    // его удаляем, создавая с таким же именем
+                    int r = 78;
+
+                } else {
+                     if (!node.containsKey(path)) {
+                         node.put(path, new JSONObject());
+                     }
+                }
+
+                if (isLast) {
+                    previousValue = node.put(path, value);
+                } else {
+                    parent = node.get(path);            // going deeper
+                }
             } else {
                 // TODO: verify this case
                 throw new Exception("Unknown type of parent object: " + parent.getClass());
             }
         }
-        // TODO here and now, we can add value, and return previous value
-        return new Object();
+        return previousValue;
+
 
         // TODO such agile logic for writing
         /*oo.AddStory( {backlog: { id: 12312 },

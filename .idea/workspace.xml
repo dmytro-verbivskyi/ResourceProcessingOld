@@ -3,14 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="ab383108-3c0e-4e02-bf49-9d28a7b57c34" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dverbovskiy/web/rest/Container.java" afterPath="$PROJECT_DIR$/src/main/java/dverbovskiy/web/rest/Container.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dverbovskiy/util/Util.java" afterPath="$PROJECT_DIR$/src/main/java/dverbovskiy/util/Util.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ResourceProcessing.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="contacts-debug.log" />
     <ignored path="contacts.log" />
-    <file path="/Dummy.txt" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1360331072268" ignored="false" />
+    <file path="/Dummy.txt" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1360339377822" ignored="false" />
     <file path="/index.jsp" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1359481289782" ignored="false" />
     <file path="$PROJECT_DIR$/../simple-webapp/src/main/webapp/index.jsp" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1359475078896" ignored="false" />
     <file path="/Facade.java" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1360246391779" ignored="false" />
@@ -22,7 +21,7 @@
     <file path="/IdContainer.java" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1359561293425" ignored="false" />
     <file path="/fragment.java" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1360178191437" ignored="false" />
     <file path="/FlexiContainer.java" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1359738674028" ignored="false" />
-    <file path="/Container.java" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1360338582424" ignored="false" />
+    <file path="/Container.java" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1360343800285" ignored="false" />
     <file path="/Util.java" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1360335210199" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +86,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/dverbovskiy/web/rest/Container.java" line="130" class="dverbovskiy.web.rest.Container" package="dverbovskiy.web.rest">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/dverbovskiy/web/rest/Container.java" line="160" class="dverbovskiy.web.rest.Container" package="dverbovskiy.web.rest">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -101,21 +100,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/dverbovskiy/web/rest/Container.java" line="93" class="dverbovskiy.web.rest.Container" package="dverbovskiy.web.rest">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/dverbovskiy/web/rest/Container.java" line="103" class="dverbovskiy.web.rest.Container" package="dverbovskiy.web.rest">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/dverbovskiy/web/rest/Container.java" line="129" class="dverbovskiy.web.rest.Container" package="dverbovskiy.web.rest">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -130,6 +115,34 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
       <breakpoint url="file://$PROJECT_DIR$/src/main/java/dverbovskiy/web/rest/Container.java" line="119" class="dverbovskiy.web.rest.Container" package="dverbovskiy.web.rest">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/dverbovskiy/web/rest/Container.java" line="137" class="dverbovskiy.web.rest.Container" package="dverbovskiy.web.rest">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/dverbovskiy/web/rest/Container.java" line="148" class="dverbovskiy.web.rest.Container" package="dverbovskiy.web.rest">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -191,7 +204,7 @@
       <file leaf-file-name="Container.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/dverbovskiy/web/rest/Container.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="138" column="0" selection-start="4978" selection-end="4978" vertical-scroll-proportion="0.4050445">
+            <state line="142" column="26" selection-start="5002" selection-end="5002" vertical-scroll-proportion="0.1411229">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -928,7 +941,11 @@
       <created>1360255083007</created>
       <updated>1360255083007</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="branch if parent if JSONArray inside Container.write">
+      <created>1360339393848</created>
+      <updated>1360339393848</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -953,31 +970,31 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1216" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23462631" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3431559" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3431559" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.6565752" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923368" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2946768" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="-1897" y="498" width="1874" height="203" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32889733" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32889733" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22945571" sideWeight="0.66982025" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.40021345" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14025696" sideWeight="0.67110264" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14025696" sideWeight="0.6568441" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923368" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32889733" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2946768" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="-1897" y="498" width="1874" height="203" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1020,7 +1037,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor changes to Container.write()" />
+    <option name="LAST_COMMIT_MESSAGE" value="branch if parent if JSONArray inside Container.write" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1033,7 +1050,6 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="first mvn install" />
     <MESSAGE value="minor changes, trying maven jetty work" />
     <MESSAGE value="index.jsp now working on http://localhost:8080/ResourceProcessing/" />
     <MESSAGE value="import javax issue about Jersey" />
@@ -1058,6 +1074,7 @@
     <MESSAGE value="Container.writer() mega upgrade of idea, how to write an object into Container" />
     <MESSAGE value="Basic handling of navigation into Container" />
     <MESSAGE value="minor changes to Container.write()" />
+    <MESSAGE value="branch if parent if JSONArray inside Container.write" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1161,7 +1178,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dverbovskiy/web/rest/Container.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="138" column="0" selection-start="4978" selection-end="4978" vertical-scroll-proportion="0.4050445">
+        <state line="142" column="26" selection-start="5002" selection-end="5002" vertical-scroll-proportion="0.1411229">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
