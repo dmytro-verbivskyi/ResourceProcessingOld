@@ -39,7 +39,6 @@ public class Facade {
         try {
             Container container = Container.getInstance(input);
 
-            container.clear();
         } catch (Exception e) {
             e.printStackTrace();
         }

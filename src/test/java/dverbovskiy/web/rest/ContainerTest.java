@@ -12,7 +12,7 @@ public class ContainerTest {
     public void setUp() throws Exception {
         System.out.println("@Before - ContainerTest.eachTimeSetup");
 
-        //box = Container.getInstance();
+        box = Container.getInstance();
     }
 
     @After
@@ -23,6 +23,9 @@ public class ContainerTest {
     @Test
     public void testGetInstance() throws Exception {
         System.out.println("ContainerTest.testGetInstance()");
+
+        box.write("data.id.innerId", 123);
+        Object o = box.read("data.id.innerId");
     }
 
     @Test

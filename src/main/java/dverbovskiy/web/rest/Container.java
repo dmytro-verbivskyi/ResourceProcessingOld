@@ -13,11 +13,13 @@ import java.util.ArrayList;
 /**
  * This container is the highest level of processing json data containers
  */
-public class Container extends JSONObject {
+public class Container /*extends JSONObject*/ {
+
     public static final String CMD = "cmd";
     public static final String DATA = "data";
     public static final String OPTIONS = "options";
     private static final Logger log = Logger.getLogger(Container.class);
+    private JSONObject box = new JSONObject();
 
     private Container() {
         super();
@@ -25,24 +27,30 @@ public class Container extends JSONObject {
 
     public static Container getInstance(String input) throws Exception {
         JSONParser parser = new JSONParser();
-        Container container = new Container();
-
         JSONObject jsonObject = (JSONObject) parser.parse(input);
 
-        container.put(CMD, getMandatory(jsonObject, CMD));
-        container.put(DATA, getMandatory(jsonObject, DATA));
-        container.put(OPTIONS, getMandatory(jsonObject, OPTIONS));
+        Object cmd = getMandatory(jsonObject, CMD);
+        Object data = getMandatory(jsonObject, DATA);
+        Object options = getMandatory(jsonObject, OPTIONS);
 
-        /*Object o1 = container.read("CMD");
-        Object o3 = container.read("data.id");
-        Object o4 = container.read("data.ID.requestId");
-        Object o5 = container.read("data.array.3.1");*/
+        return getInstance(cmd, data, options);
+    }
 
-        Object o6 = container.write("data.1.array.6", 14);
+    public static Container getInstance() throws Exception {
+        return getInstance("", new JSONObject(), new JSONObject());
+    }
 
-        //o6 = container.write("data.ID", 98);
+    private static Container getInstance(Object cmd, Object data, Object options) throws Exception {
+        Container container = new Container();
 
+        container.put(CMD, cmd);
+        container.put(DATA, data);
+        container.put(OPTIONS, options);
         return container;
+    }
+
+    private void put(Object key, Object value) {
+        box.put(key, value);
     }
 
     private static Object getMandatory(JSONObject jsonObject, String label) throws Exception {
@@ -80,7 +88,7 @@ public class Container extends JSONObject {
     }
 
     public Object write(String fullPath, Object value) throws Exception {
-        Object parent = this;
+        Object parent = this.box;
         Object previousValue = null;
 
         String[] pathParts = fullPath.toLowerCase().split("\\.");
@@ -149,9 +157,9 @@ public class Container extends JSONObject {
                     int r = 78;
 
                 } else {
-                     if (!node.containsKey(path)) {
-                         node.put(path, new JSONObject());
-                     }
+                    if (!node.containsKey(path)) {
+                        node.put(path, new JSONObject());
+                    }
                 }
 
                 if (isLast) {
