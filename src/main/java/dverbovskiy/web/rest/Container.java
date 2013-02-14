@@ -13,7 +13,7 @@ import java.util.ArrayList;
 /**
  * This container is the highest level of processing json data containers
  */
-public class Container /*extends JSONObject*/ {
+public class Container {
 
     public static final String CMD = "cmd";
     public static final String DATA = "data";
@@ -43,33 +43,34 @@ public class Container /*extends JSONObject*/ {
     private static Container getInstance(Object cmd, Object data, Object options) throws Exception {
         Container container = new Container();
 
-        container.put(CMD, cmd);
-        container.put(DATA, data);
-        container.put(OPTIONS, options);
+        container.box.put(CMD, cmd);
+        container.box.put(DATA, data);
+        container.box.put(OPTIONS, options);
         return container;
     }
 
-    private void put(Object key, Object value) {
-        box.put(key, value);
-    }
-
-    private static Object getMandatory(JSONObject jsonObject, String label) throws Exception {
+    private static Object getMandatory(JSONObject jsonObject, String label) throws IllegalArgumentException {
         Object buffer;
 
         if (!(CMD.equals(label) || DATA.equals(label) || OPTIONS.equals(label))) {
-            throw new Exception("\"" + label + "\" is unknown parameter");
+            throw new IllegalArgumentException("\"" + label + "\" is unknown parameter");
         }
 
         if (jsonObject.containsKey(label)) {
             buffer = jsonObject.get(label);
         } else {
-            throw new Exception("\"" + label + "\" parameter is mandatory, even if it is empty");
+            throw new IllegalArgumentException("\"" + label + "\" parameter is mandatory, even if it is empty");
         }
         return buffer;
     }
 
-    public Object read(String fullPath) {
-        Object node = this;
+    @Override
+    public String toString() {
+        return box.toJSONString();
+    }
+
+    public Object get(String fullPath) {
+        Object node = this.box;
         fullPath = fullPath.toLowerCase();
         log.debug("fullPath: " + fullPath);
 
@@ -87,7 +88,7 @@ public class Container /*extends JSONObject*/ {
         return node;
     }
 
-    public Object write(String fullPath, Object value) throws Exception {
+    public Object put(String fullPath, Object value) throws Exception {
         Object parent = this.box;
         Object previousValue = null;
 
@@ -207,11 +208,11 @@ public class Container /*extends JSONObject*/ {
            }
         }
 
-          obj.write("backlog.id", 1341324);
-          obj.write("storyItem.external.id.value", '23423423');
-          obj.write("storyItem.external.2.id.a", '23');
-          obj.write("storyItem.title", '234234234');
-          obj.write("position.after.id", '23423');
+          obj.put("backlog.id", 1341324);
+          obj.put("storyItem.external.id.value", '23423423');
+          obj.put("storyItem.external.2.id.a", '23');
+          obj.put("storyItem.title", '234234234');
+          obj.put("position.after.id", '23423');
         */
 
     }
