@@ -15,6 +15,9 @@ public class ContainerTest {
     @Rule
     public TestName name = new TestName();
     private static String emptyContainer = "{\"cmd\":\"\",\"data\":{},\"options\":{}}";
+    private static String CMD = Container.CMD;
+    private static String DATA = Container.DATA;
+    private static String OPTIONS = Container.OPTIONS;
 
     @Before
     public void setUp() throws Exception {
@@ -40,48 +43,106 @@ public class ContainerTest {
 
     @Test(expected = IllegalArgumentException.class)
     public void testGetInstance_MandatoryCmd() throws Exception {
-        String wrong = emptyContainer.replace(Container.CMD, "wrong");
+        String wrong = emptyContainer.replace(CMD, "wrong");
         Container.getInstance(wrong);
     }
 
     @Test(expected = IllegalArgumentException.class)
     public void testGetInstance_MandatoryData() throws Exception {
-        String wrong = emptyContainer.replace(Container.DATA, "wrong");
+        String wrong = emptyContainer.replace(DATA, "wrong");
         Container.getInstance(wrong);
     }
 
     @Test(expected = IllegalArgumentException.class)
     public void testGetInstance_MandatoryOptions() throws Exception {
-        String wrong = emptyContainer.replace(Container.OPTIONS, "wrong");
+        String wrong = emptyContainer.replace(OPTIONS, "wrong");
         Container.getInstance(wrong);
     }
 
     @Test
-    public void testWrite_PreviousCmdEmpty() throws Exception {
+    public void testPut_PreviousCmdEmpty() throws Exception {
         Container container = Container.getInstance();
-        Object emptyStr = container.put(Container.CMD, "text");
+        Object emptyStr = container.put(CMD, "text");
         assertEquals(emptyStr.toString(), "");
     }
 
     @Test
-    public void testWrite_PreviousDataEmpty() throws Exception {
+    public void testPut_PreviousDataEmpty() throws Exception {
         Container container = Container.getInstance();
-        Object emptyStr = container.put(Container.DATA, "text");
+        Object emptyStr = container.put(DATA, "text");
         assertEquals(emptyStr, new JSONObject());
     }
 
     @Test
-    public void testWrite_PreviousOptionsEmpty() throws Exception {
+    public void testPut_PreviousOptionsEmpty() throws Exception {
         Container container = Container.getInstance();
-        Object emptyStr = container.put(Container.OPTIONS, "text");
+        Object emptyStr = container.put(OPTIONS, "text");
         assertEquals(emptyStr, new JSONObject());
     }
 
     @Test
-    public void testRead_SimpleCmd() throws Exception {
+    public void testGet_SimpleCmd() throws Exception {
         Container container = Container.getInstance();
-        container.put(Container.CMD, "text");
-        Object o = container.get(Container.CMD);
+        container.put(CMD, "text");
+        Object o = container.get(CMD);
         assertEquals(o.toString(), "text");
+    }
+
+    @Test
+    public void testGet_SimpleData01() throws Exception {
+        Container container = Container.getInstance();
+        JSONObject jo = new JSONObject();
+        jo.put("id", "text");
+        container.put(DATA, jo);
+
+        Object o = container.get(DATA);
+        assertEquals(o, jo);
+    }
+
+    @Test
+    public void testGet_SimpleData02() throws Exception {
+        Container container = Container.getInstance();
+        JSONObject jo = new JSONObject();
+        jo.put("id", "text");
+        container.put(DATA, jo);
+
+        Object o = container.get(DATA + ".id");
+        assertEquals(o.toString(), "text");
+    }
+
+    @Test
+    public void testPut_PreviousData01() throws Exception {
+        Container container = Container.getInstance();
+        JSONObject jo = new JSONObject();
+        jo.put("id", "text");
+        container.put(DATA, jo);
+
+        Object o = container.put(DATA + ".id", "id");
+        assertEquals(o.toString(), "text");
+
+
+        container.put("cmd", 123);
+        container.put("cmd.id", 123);   // exception
+        container.put("cmd.1", 123);    // exception
+
+        container.put("data", 123);
+        container.put("data.1", 123);   // exception
+
+        container.put("data.id", 123);
+        container.put("data.id.3", 123);
+        container.put("data.id.-3", 123);
+        container.put("data.id.3.id", 123);
+        container.put("data.id.3.id.9", 123);
+        container.put("data.id.3.id", 123);
+        container.put("data.id", 123); /* + */ container.put("data.id.3", 123);
+
+        container.put("something.id.3.id.9", 123);
+
+        container.get("cmd");
+        container.get("cmd.id");        // null
+        container.get("cmd.1");         // null
+
+        container.get("data");
+        container.get("data.1");        // null
     }
 }
