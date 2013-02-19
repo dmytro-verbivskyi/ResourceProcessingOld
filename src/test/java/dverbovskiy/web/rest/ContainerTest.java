@@ -120,7 +120,7 @@ public class ContainerTest {
         Object o = container.put(DATA + ".id", "id");
         assertEquals(o.toString(), "text");
 
-
+        /* // DONE test cases
         container.put("cmd", 123);
         container.put("cmd.id", 123);   // exception
         container.put("cmd.1", 123);    // exception
@@ -128,13 +128,18 @@ public class ContainerTest {
         container.put("data", 123);
         container.put("data.1", 123);   // exception
 
-        container.put("data.id", 123);
+        container.put("data.id", 123);*/
+
+        /* // NOT DONE
         container.put("data.id.3", 123);
         container.put("data.id.-3", 123);
         container.put("data.id.3.id", 123);
         container.put("data.id.3.id.9", 123);
         container.put("data.id.3.id", 123);
-        container.put("data.id", 123); /* + */ container.put("data.id.3", 123);
+
+        // etot case pochti gotov v    container.put("data.id.3", 123);
+        container.put("data.id", 123);      // +
+        container.put("data.id.3", 123);
 
         container.put("something.id.3.id.9", 123);
 
@@ -143,6 +148,51 @@ public class ContainerTest {
         container.get("cmd.1");         // null
 
         container.get("data");
-        container.get("data.1");        // null
+        container.get("data.1");        // null  */
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testPut_InvalidCmd01() throws Exception {
+        Container container = Container.getInstance();
+        container.put(CMD + ".id", "text");
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testPut_InvalidCmd02() throws Exception {
+        Container container = Container.getInstance();
+        container.put(CMD + ".1", "text");
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testPut_DataCastToArray() throws Exception {
+        Container container = Container.getInstance();
+        container.put(DATA + ".1", "text");
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testPut_OptionsCastToArray() throws Exception {
+        Container container = Container.getInstance();
+        container.put(OPTIONS + ".1", "text");
+    }
+
+    @Test
+    public void testPut_NoSuchPath01() throws Exception {
+        Container container = Container.getInstance();
+        container.put(DATA + ".id", "text");
+
+        Object o1 = container.get(DATA);
+        assertTrue(((JSONObject)o1).containsKey("id"));
+        assertTrue(o1 instanceof JSONObject);
+
+        Object o2 = container.get(DATA + ".id");
+        assertEquals(o2.toString(), "text");
+    }
+
+    @Test
+    public void testPut_NoSuchPath02() throws Exception {
+        Container container = Container.getInstance();
+        container.put(DATA + ".id.3", "text");
+        Object o = container.get(DATA);
+        int d = 6;
     }
 }

@@ -94,6 +94,9 @@ public class Container {
 
         String[] pathParts = fullPath.toLowerCase().split("\\.");
 
+        if (!validatePath(pathParts)) {
+            return null;
+        }
         for (int i = 0; i < pathParts.length; i++) {
             String path = pathParts[i];
             boolean isInt = Util.isInteger(path);
@@ -215,6 +218,19 @@ public class Container {
           obj.put("position.after.id", '23423');
         */
 
+    }
+
+    private boolean validatePath(String[] path) throws IllegalArgumentException {
+        if (CMD.equals(path[0])) {
+            if (path.length > 1) {
+                throw new IllegalArgumentException("\"" + CMD + "\" can contain only string value");
+            }
+        } else if (DATA.equals(path[0]) || OPTIONS.equals(path[0])) {
+            if (path.length > 1 && Util.isInteger(path[1])) {
+                throw new IllegalArgumentException("Neither \"" + DATA + "\" nor \"" + OPTIONS + "\" can contain only string value");
+            }
+        }
+        return true;
     }
 
 }
