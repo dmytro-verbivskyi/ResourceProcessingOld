@@ -177,47 +177,6 @@ public class Container {
             }
         }
         return previousValue;
-
-
-        // TODO such agile logic for writing
-        /*oo.AddStory( {backlog: { id: 12312 },
-                 storyItem: {
-                    external: {
-                      id: {value: '23423423', a:'23'}
-                    },
-                    title: 'wewerwe'
-                 },
-                 position: { after: {id:'23423'}
-                 }
-               });
-        // true JSON
-        {
-           "backlog":{
-              "id":12312
-           },
-           "storyItem":{
-              "external":{
-                 "id":{
-                    "value":"23423423",
-                    "a":23
-                 }
-              },
-              "title":"wewerwe"
-           },
-           "position":{
-              "after":{
-                 "id":23423
-              }
-           }
-        }
-
-          obj.put("backlog.id", 1341324);
-          obj.put("storyItem.external.id.value", '23423423');
-          obj.put("storyItem.external.2.id.a", '23');
-          obj.put("storyItem.title", '234234234');
-          obj.put("position.after.id", '23423');
-        */
-
     }
 
     private boolean validatePath(String[] path) throws IllegalArgumentException {

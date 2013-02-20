@@ -2,6 +2,7 @@ package dverbovskiy.web.rest;
 
 import dverbovskiy.util.DebugUtil;
 import org.json.simple.JSONObject;
+import org.json.simple.JSONArray;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -181,7 +182,7 @@ public class ContainerTest {
         container.put(DATA + ".id", "text");
 
         Object o1 = container.get(DATA);
-        assertTrue(((JSONObject)o1).containsKey("id"));
+        assertTrue(((JSONObject) o1).containsKey("id"));
         assertTrue(o1 instanceof JSONObject);
 
         Object o2 = container.get(DATA + ".id");
@@ -190,9 +191,112 @@ public class ContainerTest {
 
     @Test
     public void testPut_NoSuchPath02() throws Exception {
-        Container container = Container.getInstance();
+        /*Container container = Container.getInstance();
         container.put(DATA + ".id.3", "text");
         Object o = container.get(DATA);
-        int d = 6;
+        int d = 6;*/
+
+        int t = 0;
+    }
+
+    @Test
+    public void testPut_Etalon01() throws Exception {
+        JSONObject container = new JSONObject();
+        container.put("cmd", "createPerson");
+        container.put("options", new JSONObject());
+
+        JSONObject child_1_1 = new JSONObject();
+        child_1_1.put("name", "Pupkin Petr Nikolayevich");
+        child_1_1.put("age", 9);
+        child_1_1.put("married", false);
+        child_1_1.put("children", new JSONArray());
+
+        JSONObject child_1_2 = new JSONObject();
+        child_1_2.put("name", "Pupkin Nikolay Nikolayevich");
+        child_1_2.put("age", 4);
+        child_1_2.put("married", false);
+        child_1_2.put("children", new JSONArray());
+
+        JSONObject child_1 = new JSONObject();
+        child_1.put("name", "Pupkin Nikolay Ivanovich");
+        child_1.put("age", 34);
+        child_1.put("married", true);
+        JSONArray children_1 = new JSONArray();
+        children_1.add(child_1_1);
+        children_1.add(child_1_2);
+        child_1.put("children", children_1);
+
+        JSONObject child_2 = new JSONObject();
+        child_2.put("name", "Pupkin Igor Ivanovich");
+        child_2.put("age", 19);
+        child_2.put("married", false);
+        child_2.put("children", new JSONArray());
+
+        JSONObject person = new JSONObject();
+        person.put("name", "Pupkin Ivan Ivanovich");
+        person.put("age", 59);
+        person.put("married", true);
+        JSONArray children_0 = new JSONArray();
+        children_0.add(child_1);
+        children_0.add(child_2);
+        person.put("children", children_0);
+
+        JSONObject personContainer = new JSONObject();
+        personContainer.put("person", person);
+
+        container.put("data", personContainer);
+
+        String s = container.toJSONString();
+        String etalon = "{\"cmd\":\"createPerson\",\"data\":{\"person\":{\"married\":true,\"age\":59,\"name\":\"Pupkin Ivan Ivanovich\",\"children\":[{\"married\":true,\"age\":34,\"name\":\"Pupkin Nikolay Ivanovich\",\"children\":[{\"married\":false,\"age\":9,\"name\":\"Pupkin Petr Nikolayevich\",\"children\":[]},{\"married\":false,\"age\":4,\"name\":\"Pupkin Nikolay Nikolayevich\",\"children\":[]}]},{\"married\":false,\"age\":19,\"name\":\"Pupkin Igor Ivanovich\",\"children\":[]}]}},\"options\":{}}";
+
+        assertEquals(s, etalon);
+/*
+{
+   "cmd":"createPerson",
+   "data":{
+      "person":{
+         "married":true,
+         "age":59,
+         "name":"Pupkin Ivan Ivanovich",
+         "children":[
+            {
+               "married":true,
+               "age":34,
+               "name":"Pupkin Nikolay Ivanovich",
+               "children":[
+                  {
+                     "married":false,
+                     "age":9,
+                     "name":"Pupkin Petr Nikolayevich",
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "married":false,
+                     "age":4,
+                     "name":"Pupkin Nikolay Nikolayevich",
+                     "children":[
+
+                     ]
+                  }
+               ]
+            },
+            {
+               "married":false,
+               "age":19,
+               "name":"Pupkin Igor Ivanovich",
+               "children":[
+
+               ]
+            }
+         ]
+      }
+   },
+   "options":{
+
+   }
+}
+*/
     }
 }
