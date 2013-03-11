@@ -1,47 +1,27 @@
 package dverbovskiy.debugTraining;
 
 public class Test {
+    public int a;   //--1--
+    public Obj o;   //--2--
+
+    public int getB() {
+//        int b;
+//        Obj o;
+//        return o.getX() + b;   //--3--
+        return 1;
+    }
+
     public static void main(String[] args) {
-        Sub a = new Sub(45);
-        System.out.println(a.getI());
+        Test t = new Test();
+        System.out.println(t.a);        //--4--
+        System.out.println(t.o);        //--5--
+        System.out.println(t.getB());   //--6--
     }
 }
 
-class Base {
-    private int i;
+class Obj {
+    private int x;
 
-    Base() {this.i = 99;}
-
-    Base(int i) { this.i = i; }
-
-    public int getI() {
-        return this.i;
-    }
+    Obj()             { this.x = 1; }
+    public int getX() { return this.x; }
 }
-
-class Sub extends Base {
-
-    public Sub(int i) {
-        super(i);
-    }
-}
-
-
-/*
-
-public class Test {
-    public static void main(String[] args) {
-        MyThread t = new MyThread();
-        t.start();
-    }
-}
-
-class MyThread extends Thread {
-    public void run() {
-        System.out.print("Running");
-    }
-    public void start() {
-        System.out.print("Starting");
-    }
-}
-*/
