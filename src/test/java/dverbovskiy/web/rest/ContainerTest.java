@@ -191,12 +191,10 @@ public class ContainerTest {
 
     @Test
     public void testPut_NoSuchPath02() throws Exception {
-        /*Container container = Container.getInstance();
+        Container container = Container.getInstance();
         container.put(DATA + ".id.3", "text");
         Object o = container.get(DATA);
-        int d = 6;*/
-
-        int t = 0;
+        int d = 6;
     }
 
     @Test
@@ -250,6 +248,28 @@ public class ContainerTest {
         String etalon = "{\"cmd\":\"createPerson\",\"data\":{\"person\":{\"married\":true,\"age\":59,\"name\":\"Pupkin Ivan Ivanovich\",\"children\":[{\"married\":true,\"age\":34,\"name\":\"Pupkin Nikolay Ivanovich\",\"children\":[{\"married\":false,\"age\":9,\"name\":\"Pupkin Petr Nikolayevich\",\"children\":[]},{\"married\":false,\"age\":4,\"name\":\"Pupkin Nikolay Nikolayevich\",\"children\":[]}]},{\"married\":false,\"age\":19,\"name\":\"Pupkin Igor Ivanovich\",\"children\":[]}]}},\"options\":{}}";
 
         assertEquals(s, etalon);
+/*
+container.put("cmd", "createPerson");
+container.put("data.person.married", true);
+container.put("data.person.age", 59);
+container.put("data.person.name", "Pupkin Ivan Ivanovich");
+container.put("data.person.children.0.married", true);
+container.put("data.person.children.0.age", 34);
+container.put("data.person.children.0.name", "Pupkin Nikolay Ivanovich");
+container.put("data.person.children.0.children.0.married", false);
+container.put("data.person.children.0.children.0.age", 9);
+container.put("data.person.children.0.children.0.name", "Pupkin Petr Nikolayevich");
+container.put("data.person.children.0.children.0.children", null);
+container.put("data.person.children.0.children.1.married", false);
+container.put("data.person.children.0.children.1.age", 4);
+container.put("data.person.children.0.children.1.name", "Pupkin Nikolay Nikolayevich");
+container.put("data.person.children.0.children.1.children", null);
+container.put("data.person.children.1.married", false);
+container.put("data.person.children.1.age", 19);
+container.put("data.person.children.1.name", "Pupkin Nikolay Nikolayevich");
+container.put("data.person.children.1.children", null);
+container.put("options", null);
+*/
 /*
 {
    "cmd":"createPerson",

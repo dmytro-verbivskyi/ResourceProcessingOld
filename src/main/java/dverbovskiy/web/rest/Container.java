@@ -89,6 +89,7 @@ public class Container {
     }
 
     public Object put(String fullPath, Object value) throws Exception {
+        Object grandParent = this.box;  // needed when reCasting is done
         Object parent = this.box;
         Object previousValue = null;
 
@@ -127,12 +128,7 @@ public class Container {
                             node.add(new JSONObject()); // adding empty object to array
                         }
                     }
-
-                    if (isLast) {
-                        previousValue = node.set(index, value);
-                    } else {
-                        parent = node.get(index);       // going deeper
-                    }
+                    previousValue = putOrGoDeeperJSONArray(grandParent, parent, node, isLast, index, value);
                 } else {
                     // implying that user wants to work with array[0] element
                     if (!node.contains(0)) {
@@ -145,38 +141,60 @@ public class Container {
                         // TODO: verify this case
                         element.put(path, new JSONObject()); // adding empty object to array[0] element
                     }
-
-                    if (isLast) {
-                        previousValue = element.put(path, value);
-                    } else {
-                        parent = element.get(path);    // going deeper
-                    }
+                    previousValue = putOrGoDeeperJSONObject(grandParent, parent, element, isLast, path, value);
                 }
             } else if (parent instanceof JSONObject) {
-                JSONObject node = (JSONObject) parent;
+                JSONObject element = (JSONObject) parent;
 
                 if (isInt) {
-                    // TODO Создаем JSONArray. В JSONArray[0] ложим текущее СОДЕРЖИМОЕ node(он же parent) JSONObject, а
+                    // TODO Создаем JSONArray. В JSONArray[0] ложим текущее СОДЕРЖИМОЕ element(он же parent) JSONObject, а
                     // его удаляем, создавая с таким же именем
                     int r = 78;
+                    JSONArray array = new JSONArray();
+
+                    array.add(0, element);
+                    if (index == 0) {
+                        // TODO а вдруг за этим 0 больше ничего нет, тогда придется жертвовать или element, или value
+                    } else {
+                        array.add(0, element);
+                        log.warn("Not proper order of adding values. It's not effective. Current max index: 1; index : " + index);
+
+                        for (int j = 1; j <= index; j++) {
+                            array.add(j, new JSONObject()); // adding empty object to array
+                        }
+                    }
+
 
                 } else {
-                    if (!node.containsKey(path)) {
-                        node.put(path, new JSONObject());
+                    if (!element.containsKey(path)) {
+                        element.put(path, new JSONObject());
                     }
                 }
-
-                if (isLast) {
-                    previousValue = node.put(path, value);
-                } else {
-                    parent = node.get(path);            // going deeper
-                }
+                previousValue = putOrGoDeeperJSONObject(grandParent, parent, element, isLast, path, value);
             } else {
                 // TODO: verify this case
                 throw new Exception("Unknown type of parent object: " + parent.getClass());
             }
         }
         return previousValue;
+    }
+
+    private Object putOrGoDeeperJSONArray(Object grandParent, Object parent, JSONArray array, boolean isLast, int index, Object value) {
+        if (!isLast) {
+            grandParent = parent;
+            parent = array.get(index);   // going deeper
+            return null;
+        }
+        return array.set(index, value);
+    }
+
+    private Object putOrGoDeeperJSONObject(Object grandParent, Object parent, JSONObject object, boolean isLast, String key, Object value) {
+        if (!isLast) {
+            grandParent = parent;
+            parent = object.get(key);   // going deeper
+            return null;
+        }
+        return object.put(key, value);
     }
 
     private boolean validatePath(String[] path) throws IllegalArgumentException {
