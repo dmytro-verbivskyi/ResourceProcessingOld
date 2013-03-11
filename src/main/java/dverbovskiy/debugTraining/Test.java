@@ -12,10 +12,15 @@ public class Test {
     }
 
     public static void main(String[] args) {
-        Test t = new Test();
+       /* Test t = new Test();
         System.out.println(t.a);        //--4--
         System.out.println(t.o);        //--5--
-        System.out.println(t.getB());   //--6--
+        System.out.println(t.getB());   //--6--*/
+
+        System.out.println(false^false);
+        System.out.println(false^true );
+        System.out.println( true^false);
+        System.out.println( true^true );
     }
 }
 
