@@ -6,52 +6,73 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * String semi-json input: "data.person.children.0.children.0.4.married"
+ * must be marked as:      OBJECT.OBJECT.ARRAY.ELEMENT.ARRAY.ELEMENT_ARRAY.ELEMENT.FIELD
  * User: dverbovskiy
  * Date: 24.03.13
  * Time: 19:53
  */
 class JSONPath {
     private List<PathPiece> path = new ArrayList<PathPiece>();
-    static final int OBJECT = 0;
-    static final int ARRAY = 1;
-    static final int ELEMENT = 2;
-    static final int FIELD = 3;
 
     JSONPath(String fullPath) throws IllegalArgumentException {
-        // sample input:      "data.person.children.0.children.0.married"
-        // must be marked as:  OBJECT.OBJECT.ARRAY.ELEMENT.ARRAY.ELEMENT.FIELD
         String[] pathParts = fullPath.toLowerCase().split("\\.");
-        int limit = pathParts.length - 1;
 
-        if (limit < 1) {
+        if (0 == pathParts[0].length()) {
             throw new IllegalArgumentException("Path cannot be empty");
         }
+        JSONPathType type = JSONPathType.OBJECT;
+        int i = 0;
 
-        for (int i = 0; i < limit; i++) {
-            int jsonType = OBJECT;
+        for (; i < pathParts.length; i++) {
             boolean isInt = Util.isInteger(pathParts[i]);
-
             if (i == 0 && isInt) {
-                throw new IllegalArgumentException("Root element must be an object");
+                throw new IllegalArgumentException("Root cannot be of type ELEMENT");
             }
 
             if (isInt) {
-                // editing/marking preLast element as an array
-                path.get(i - 1).value = ARRAY;
-                jsonType = ELEMENT;
+                if (0 > Integer.parseInt(pathParts[i])) {
+                    throw new IllegalArgumentException("Negative array index not allowed");
+                }
+
+                if (type == JSONPathType.ELEMENT) {
+                    // editing/marking preLast ELEMENT as an ELEMENT_ARRAY
+                    path.get(i - 1).pathType = JSONPathType.ELEMENT_ARRAY;
+                    type = JSONPathType.ELEMENT;
+                } else {
+                    // editing/marking preLast OBJECT as an ARRAY
+                    path.get(i - 1).pathType = JSONPathType.ARRAY;
+                    type = JSONPathType.ELEMENT;
+                }
+            } else {
+                type = JSONPathType.OBJECT;
             }
-            path.add(new PathPiece(pathParts[i], jsonType));
+            path.add(new PathPiece(pathParts[i], type));
         }
-        path.add(new PathPiece(pathParts[limit + 1], FIELD));
+        if (JSONPathType.OBJECT == path.get(i - 1).pathType) {
+            path.get(i - 1).pathType = JSONPathType.FIELD;
+        }
+    }
+
+    public String getKey(int index) {
+        return path.get(index).pathKey;
+    }
+
+    public JSONPathType getType(int index) {
+        return path.get(index).pathType;
+    }
+
+    public int length() {
+        return path.size();
     }
 
     private class PathPiece {
-        String path;
-        int value;
+        String pathKey;
+        JSONPathType pathType;
 
-        PathPiece(String p, int v) {
-            path = p;
-            value = v;
+        PathPiece(String p, JSONPathType v) {
+            pathKey = p;
+            pathType = v;
         }
     }
 }

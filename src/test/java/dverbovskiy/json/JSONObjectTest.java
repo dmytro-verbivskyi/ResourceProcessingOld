@@ -31,7 +31,7 @@ public class JSONObjectTest {
     public void testPut_Simple() throws Exception {
         JSONObject json = JSONObject.getInstance();
 
-        json.put("a.b.4.6.d.5", 12);
+        json.put("a.b.4.7.d.5", 12);
 
 
         assertEquals("{}", json.toString());
