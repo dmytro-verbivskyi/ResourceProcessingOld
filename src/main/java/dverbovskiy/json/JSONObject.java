@@ -58,12 +58,14 @@ public class JSONObject {
         Object previousValue = null;
 
         JSONPath path = new JSONPath(fullPath);
-        int a = 8;
+
+        for (int i = 0; i < path.length(); i++) {
+             if (path.getType(i) == JSONPathType.ARRAY) {
+
+             }
+        }
 
         return null;
-        /*for (int i = 0; i < pathParts.length; i++) {
-
-        }*/
     }
 
 
