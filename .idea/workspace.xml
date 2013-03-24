@@ -9,7 +9,7 @@
     <ignored path=".idea/workspace.xml" />
     <ignored path="contacts-debug.log" />
     <ignored path="contacts.log" />
-    <file path="/Dummy.txt" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1364160436709" ignored="false" />
+    <file path="/Dummy.txt" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1364160834638" ignored="false" />
     <file path="/index.jsp" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1359481289782" ignored="false" />
     <file path="$PROJECT_DIR$/../simple-webapp/src/main/webapp/index.jsp" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1359475078896" ignored="false" />
     <file path="/Facade.java" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1360246391779" ignored="false" />
@@ -222,7 +222,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/dverbovskiy/json/JSONObject.java" line="60" class="dverbovskiy.json.JSONObject" package="dverbovskiy.json">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/dverbovskiy/json/JSONObject.java" line="55" class="dverbovskiy.json.JSONObject" package="dverbovskiy.json">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -363,13 +363,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="JSONObject.java" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="JSONObject.java" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/dverbovskiy/json/JSONObject.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="54" column="31" selection-start="1276" selection-end="1276" vertical-scroll-proportion="0.09352518">
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
+                <state line="46" column="11" selection-start="1101" selection-end="1101" vertical-scroll-proportion="-0.007194245">
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -378,7 +376,7 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="JSONObjectTest.java" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="JSONObjectTest.java" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/dverbovskiy/json/JSONObjectTest.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state line="33" column="31" selection-start="796" selection-end="803" vertical-scroll-proportion="0.55711776">
@@ -1554,7 +1552,11 @@
       <created>1364160451619</created>
       <updated>1364160451619</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="JSONObject put test preparation">
+      <created>1364160842435</created>
+      <updated>1364160842435</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -1646,7 +1648,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="JSONPath full JUnit" />
+    <option name="LAST_COMMIT_MESSAGE" value="JSONObject put test preparation" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1659,7 +1661,6 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="POST debugging in progress" />
     <MESSAGE value="great progress CURL erased my quotes from JSON" />
     <MESSAGE value="simple structure of FlexiContainer implemented, parsing &quot;cmd&quot; works well, but &quot;container&quot; and &quot;option&quot; must be JSONObject" />
     <MESSAGE value="&quot;container&quot; and &quot;options&quot; now JSONObject" />
@@ -1684,6 +1685,7 @@
     <MESSAGE value="debugTraining" />
     <MESSAGE value="JSONPath and JSONObject init" />
     <MESSAGE value="JSONPath full JUnit" />
+    <MESSAGE value="JSONObject put test preparation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1824,18 +1826,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dverbovskiy/json/JSONObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="31" selection-start="1276" selection-end="1276" vertical-scroll-proportion="0.09352518">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/dverbovskiy/json/JSONObjectTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="31" selection-start="796" selection-end="803" vertical-scroll-proportion="0.55711776">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dverbovskiy/json/JSONObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="11" selection-start="1101" selection-end="1101" vertical-scroll-proportion="-0.007194245">
           <folding />
         </state>
       </provider>

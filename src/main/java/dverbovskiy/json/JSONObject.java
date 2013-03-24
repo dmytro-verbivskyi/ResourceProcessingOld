@@ -1,6 +1,5 @@
 package dverbovskiy.json;
 
-import org.apache.log4j.Logger;
 import org.json.simple.parser.JSONParser;
 
 /**
@@ -9,7 +8,6 @@ import org.json.simple.parser.JSONParser;
  * Time: 18:45
  */
 public class JSONObject {
-    private static final Logger log = Logger.getLogger(JSONObject.class);
     private org.json.simple.JSONObject box = new org.json.simple.JSONObject();
 
     private JSONObject() {
@@ -45,10 +43,7 @@ public class JSONObject {
         if (!(o instanceof JSONObject)) return false;
 
         JSONObject that = (JSONObject) o;
-
-        if (!box.equals(that.box)) return false;
-
-        return true;
+        return box.equals(that.box);
     }
 
 
