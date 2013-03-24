@@ -93,6 +93,8 @@ public class Container {
         Object parent = this.box;
         Object previousValue = null;
 
+
+
         String[] pathParts = fullPath.toLowerCase().split("\\.");
 
         if (!validatePath(pathParts)) {
