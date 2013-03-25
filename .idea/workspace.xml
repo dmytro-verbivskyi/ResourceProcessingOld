@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab383108-3c0e-4e02-bf49-9d28a7b57c34" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dverbovskiy/json/JSONObject.java" afterPath="$PROJECT_DIR$/src/main/java/dverbovskiy/json/JSONObject.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ResourceProcessing.iml" afterPath="$PROJECT_DIR$/ResourceProcessing.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dverbovskiy/debugTraining/Test.java" afterPath="$PROJECT_DIR$/src/main/java/dverbovskiy/debugTraining/Test.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ResourceProcessing.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="contacts-debug.log" />
     <ignored path="contacts.log" />
-    <file path="/Dummy.txt" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1364160834638" ignored="false" />
+    <file path="/Dummy.txt" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1364169657735" ignored="false" />
     <file path="/index.jsp" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1359481289782" ignored="false" />
     <file path="$PROJECT_DIR$/../simple-webapp/src/main/webapp/index.jsp" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1359475078896" ignored="false" />
     <file path="/Facade.java" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1360246391779" ignored="false" />
@@ -19,21 +20,15 @@
     <file path="/Child.java" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1359554315554" ignored="false" />
     <file path="/pom.xml" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1359554774197" ignored="false" />
     <file path="/IdContainer.java" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1359561293425" ignored="false" />
-    <file path="/fragment.java" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1364160698615" ignored="false" />
+    <file path="/fragment.java" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1364122745504" ignored="false" />
     <file path="/FlexiContainer.java" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1359738674028" ignored="false" />
-    <file path="/Container.java" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1364143385791" ignored="false" />
+    <file path="/Container.java" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1361276992593" ignored="false" />
     <file path="/Util.java" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1360335210199" ignored="false" />
     <file path="$PROJECT_DIR$/../FlatFinder/javascript/metroCoordinates.js" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1360580728335" ignored="false" />
     <file path="$PROJECT_DIR$/../FlatFinder/javascript/main.js" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1360580718064" ignored="false" />
     <file path="/main.js" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1360579244205" ignored="false" />
-    <file path="/ContainerTest.java" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1364148946984" ignored="false" />
-    <file path="/Test.java" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1364149577314" ignored="false" />
-    <file path="/JSONObject.java" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1364160774625" ignored="false" />
-    <file path="/JSONObjectTest.java" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1364147030073" ignored="false" />
-    <file path="/JsonPath.java" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1364149702624" ignored="false" />
-    <file path="/JSONPath.java" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1364159252089" ignored="false" />
-    <file path="/JSONPathTest.java" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1364159972043" ignored="false" />
-    <file path="/JSONPathType.java" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1364160204287" ignored="false" />
+    <file path="/ContainerTest.java" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1363026868442" ignored="false" />
+    <file path="/Test.java" changelist="ab383108-3c0e-4e02-bf49-9d28a7b57c34" time="1364170976136" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +48,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint url="file://$PROJECT_DIR$/src/main/java/dverbovskiy/web/rest/IdContainer.java" line="61" class="dverbovskiy.web.rest.IdContainer" package="dverbovskiy.web.rest">
         <option name="ENABLED" value="true" />
@@ -82,7 +78,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/dverbovskiy/web/rest/Container.java" line="162" class="dverbovskiy.web.rest.Container" package="dverbovskiy.web.rest">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/dverbovskiy/web/rest/Container.java" line="160" class="dverbovskiy.web.rest.Container" package="dverbovskiy.web.rest">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -152,7 +148,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/dverbovskiy/web/rest/Container.java" line="101" class="dverbovskiy.web.rest.Container" package="dverbovskiy.web.rest">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/dverbovskiy/web/rest/Container.java" line="99" class="dverbovskiy.web.rest.Container" package="dverbovskiy.web.rest">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -166,7 +162,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="jar://C:/Program Files/Java/jdk1.6.0_31/src.zip!/java/lang/Thread.java" line="660" class="java.lang.Thread" package="java.lang">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/dverbovskiy/debugTraining/Test.java" line="0" class="Test.java" package="">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -180,7 +176,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="jar://C:/Program Files/Java/jdk1.6.0_31/src.zip!/java/lang/Thread.java" line="636" class="java.lang.Thread" package="java.lang">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/dverbovskiy/debugTraining/Test.java" line="6" class="dverbovskiy.debugTraining.Test" package="dverbovskiy.debugTraining">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -194,7 +190,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="jar://C:/Program Files/Java/jdk1.6.0_31/src.zip!/java/lang/Integer.java" line="683" class="java.lang.Integer" package="java.lang">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/dverbovskiy/debugTraining/Test.java" line="12" class="dverbovskiy.debugTraining.Test" package="dverbovskiy.debugTraining">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -208,91 +204,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/test/java/dverbovskiy/json/JSONObjectTest.java" line="20" class="dverbovskiy.json.JSONObjectTest" package="dverbovskiy.json">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/dverbovskiy/json/JSONObject.java" line="55" class="dverbovskiy.json.JSONObject" package="dverbovskiy.json">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/test/java/dverbovskiy/json/JSONObjectTest.java" line="36" class="dverbovskiy.json.JSONObjectTest" package="dverbovskiy.json">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/test/java/dverbovskiy/json/JSONObjectTest.java" line="33" class="dverbovskiy.json.JSONObjectTest" package="dverbovskiy.json">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/dverbovskiy/json/JSONPath.java" line="51" class="dverbovskiy.json.JSONPath" package="dverbovskiy.json">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/dverbovskiy/json/JSONPath.java" line="20" class="dverbovskiy.json.JSONPath" package="dverbovskiy.json">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/test/java/dverbovskiy/json/JSONPathTest.java" line="58" class="dverbovskiy.json.JSONPathTest" package="dverbovskiy.json">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/dverbovskiy/debugTraining/Test.java" line="15" class="dverbovskiy.debugTraining.Test" package="dverbovskiy.debugTraining">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -307,8 +219,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </line_breakpoints>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <breakpoint_rules default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -343,51 +253,33 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <breakpoint_rules default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
+  </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="hideWarnings" value="true" />
+    <option name="HIDE_WARNINGS" value="true" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="ResourceProcessing" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.496788">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="Container.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/dverbovskiy/web/rest/Container.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="115" column="14" selection-start="3369" selection-end="3629" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="JSONObject.java" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/dverbovskiy/json/JSONObject.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="46" column="11" selection-start="1101" selection-end="1101" vertical-scroll-proportion="-0.007194245">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="JSONObjectTest.java" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/test/java/dverbovskiy/json/JSONObjectTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="33" column="31" selection-start="796" selection-end="803" vertical-scroll-proportion="0.55711776">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="Test.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dverbovskiy/debugTraining/Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="32" selection-start="278" selection-end="278" vertical-scroll-proportion="0.37656903">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#345#354#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -407,22 +299,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+        <option value="$PROJECT_DIR$/src/main/java/dverbovskiy/util/DebugUtil/DebugUtil.java" />
+        <option value="$PROJECT_DIR$/.idea/ant.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/dverbovskiy/contacts/Parent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dverbovskiy/contacts/Child.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dverbovskiy/web/rest/IdContainer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dverbovskiy/web/rest/FlexiContainer.java" />
+        <option value="$PROJECT_DIR$/contacts.log" />
         <option value="$PROJECT_DIR$/src/main/java/dverbovskiy/util/Util.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/dverbovskiy/util/UtilTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/dverbovskiy/contacts/Facade.java" />
         <option value="$PROJECT_DIR$/src/main/java/dverbovskiy/util/DebugUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dverbovskiy/web/rest/Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/dverbovskiy/web/rest/Container.java" />
-        <option value="$PROJECT_DIR$/src/test/java/dverbovskiy/json/JsonPath.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dverbovskiy/web/rest/Test.java" />
         <option value="$PROJECT_DIR$/src/test/java/dverbovskiy/web/rest/ContainerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/dverbovskiy/debugTraining/Test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dverbovskiy/json/JsonPath.java" />
-        <option value="$PROJECT_DIR$/src/test/java/dverbovskiy/json/JSONObjectTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/dverbovskiy/json/JSONPathTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dverbovskiy/json/JSONPathType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dverbovskiy/json/JSONPath.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dverbovskiy/json/JSONObject.java" />
       </list>
     </option>
   </component>
@@ -476,10 +368,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1928" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1216" />
+    <option name="x" value="74" />
+    <option name="width" value="846" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -556,56 +447,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ResourceProcessing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ResourceProcessing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ResourceProcessing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ResourceProcessing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dverbovskiy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ResourceProcessing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ResourceProcessing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dverbovskiy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="contacts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -637,100 +479,6 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dverbovskiy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ResourceProcessing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ResourceProcessing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dverbovskiy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ResourceProcessing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ResourceProcessing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dverbovskiy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="json" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ResourceProcessing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ResourceProcessing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -804,6 +552,40 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="json" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ResourceProcessing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ResourceProcessing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dverbovskiy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="json" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JsonPath.java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -838,29 +620,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Default">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="ResourceProcessing">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Problems" />
-        <subPane subId="Production">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -876,7 +636,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="293" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../DIM-CM/ALM_SUITES_2013_APRIL/RLM/rlm" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="293" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="967" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="967" />
@@ -889,7 +649,7 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/dverbovskiy/json" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/dverbovskiy" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
@@ -908,32 +668,28 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="dverbovskiy.json" />
       <recent name="dverbovskiy.util" />
       <recent name="dverbovskiy.web.rest" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="dverbovskiy.json" />
-    </key>
   </component>
-  <component name="RunManager" selected="JUnit.JSONObjectTest.testPut_Simple">
-    <configuration default="false" name="JSONPathTest.testArray_2" type="JUnit" factoryName="JUnit" temporary="true">
+  <component name="RunManager" selected="Application.Test">
+    <configuration default="false" name="ContainerTest.testGetInstance_Empty" type="JUnit" factoryName="JUnit" singleton="true" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="dverbovskiy.json.*" />
+          <option name="PATTERN" value="dverbovskiy.web.rest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="ResourceProcessing" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="dverbovskiy.json" />
-      <option name="MAIN_CLASS_NAME" value="dverbovskiy.json.JSONPathTest" />
-      <option name="METHOD_NAME" value="testArray_2" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="dverbovskiy.web.rest" />
+      <option name="MAIN_CLASS_NAME" value="dverbovskiy.web.rest.ContainerTest" />
+      <option name="METHOD_NAME" value="testGetInstance_Empty" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
@@ -951,23 +707,23 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="JSONPathTest.testArray_4" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="ContainerTest.testGetInstance_MinimalEmpty" type="JUnit" factoryName="JUnit" singleton="true" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="dverbovskiy.json.*" />
+          <option name="PATTERN" value="dverbovskiy.web.rest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="ResourceProcessing" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="dverbovskiy.json" />
-      <option name="MAIN_CLASS_NAME" value="dverbovskiy.json.JSONPathTest" />
-      <option name="METHOD_NAME" value="testArray_4" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="dverbovskiy.web.rest" />
+      <option name="MAIN_CLASS_NAME" value="dverbovskiy.web.rest.ContainerTest" />
+      <option name="METHOD_NAME" value="testGetInstance_MinimalEmpty" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
@@ -985,79 +741,19 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="JSONPathTest.testTricky_1" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="ContainerTest.testGetInstance_MandatoryCmd" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="dverbovskiy.json.*" />
+          <option name="PATTERN" value="dverbovskiy.web.rest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="ResourceProcessing" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="dverbovskiy.json" />
-      <option name="MAIN_CLASS_NAME" value="dverbovskiy.json.JSONPathTest" />
-      <option name="METHOD_NAME" value="testTricky_1" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="JSONPathTest.testTricky_2" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="dverbovskiy.json.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="ResourceProcessing" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="dverbovskiy.json" />
-      <option name="MAIN_CLASS_NAME" value="dverbovskiy.json.JSONPathTest" />
-      <option name="METHOD_NAME" value="testTricky_2" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <ConfigurationWrapper RunnerId="Debug" />
-      <method />
-    </configuration>
-    <configuration default="false" name="JSONPathTest.testTricky_3" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="dverbovskiy.json.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="ResourceProcessing" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="dverbovskiy.json" />
-      <option name="MAIN_CLASS_NAME" value="dverbovskiy.json.JSONPathTest" />
-      <option name="METHOD_NAME" value="testTricky_3" />
+      <option name="PACKAGE_NAME" value="dverbovskiy.web.rest" />
+      <option name="MAIN_CLASS_NAME" value="dverbovskiy.web.rest.ContainerTest" />
+      <option name="METHOD_NAME" value="testGetInstance_MandatoryCmd" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1255,6 +951,192 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="false" name="test resourceProcessing" type="JUnit" factoryName="JUnit" singleton="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="ResourceProcessing" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="directory" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <dir value="$PROJECT_DIR$/src/test" />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ContainerTest.testWrite_PreviousDataEmpty" type="JUnit" factoryName="JUnit" singleton="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="dverbovskiy.web.rest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="ResourceProcessing" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="dverbovskiy.web.rest" />
+      <option name="MAIN_CLASS_NAME" value="dverbovskiy.web.rest.ContainerTest" />
+      <option name="METHOD_NAME" value="testWrite_PreviousDataEmpty" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <ConfigurationWrapper RunnerId="Debug" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ContainerTest.testRead_SimpleData" type="JUnit" factoryName="JUnit" singleton="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="dverbovskiy.web.rest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="ResourceProcessing" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="dverbovskiy.web.rest" />
+      <option name="MAIN_CLASS_NAME" value="dverbovskiy.web.rest.ContainerTest" />
+      <option name="METHOD_NAME" value="testRead_SimpleData" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <ConfigurationWrapper RunnerId="Debug" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ContainerTest.testPut_InvalidCmd01" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="dverbovskiy.web.rest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="ResourceProcessing" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="dverbovskiy.web.rest" />
+      <option name="MAIN_CLASS_NAME" value="dverbovskiy.web.rest.ContainerTest" />
+      <option name="METHOD_NAME" value="testPut_InvalidCmd01" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ContainerTest.testPut_DataCastToArray" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="dverbovskiy.web.rest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="ResourceProcessing" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="dverbovskiy.web.rest" />
+      <option name="MAIN_CLASS_NAME" value="dverbovskiy.web.rest.ContainerTest" />
+      <option name="METHOD_NAME" value="testPut_DataCastToArray" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <ConfigurationWrapper RunnerId="Debug" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ContainerTest.testPut_NoSuchPath02" type="JUnit" factoryName="JUnit" singleton="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="dverbovskiy.web.rest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="ResourceProcessing" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="dverbovskiy.web.rest" />
+      <option name="MAIN_CLASS_NAME" value="dverbovskiy.web.rest.ContainerTest" />
+      <option name="METHOD_NAME" value="testPut_NoSuchPath02" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <ConfigurationWrapper RunnerId="Debug" />
+      <method />
+    </configuration>
     <configuration default="false" name="jetty run" type="MavenRunConfiguration" factoryName="Maven" singleton="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -1286,92 +1168,25 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="JSONObjectTest.testPut_Simple" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="dverbovskiy.json.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="ResourceProcessing" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="dverbovskiy.json" />
-      <option name="MAIN_CLASS_NAME" value="dverbovskiy.json.JSONObjectTest" />
-      <option name="METHOD_NAME" value="testPut_Simple" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="JSONPathTest.testSimple_1" type="JUnit" factoryName="JUnit" singleton="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="dverbovskiy.json.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="ResourceProcessing" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="PACKAGE_NAME" value="dverbovskiy.json" />
-      <option name="MAIN_CLASS_NAME" value="dverbovskiy.json.JSONPathTest" />
-      <option name="METHOD_NAME" value="testSimple_1" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <list size="9">
+    <list size="12">
       <item index="0" class="java.lang.String" itemvalue="Application.Test" />
-      <item index="1" class="java.lang.String" itemvalue="Maven.jetty run" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.JSONObjectTest.testPut_Simple" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.JSONPathTest.testSimple_1" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.JSONPathTest.testArray_2" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.JSONPathTest.testArray_4" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.JSONPathTest.testTricky_1" />
-      <item index="7" class="java.lang.String" itemvalue="JUnit.JSONPathTest.testTricky_2" />
-      <item index="8" class="java.lang.String" itemvalue="JUnit.JSONPathTest.testTricky_3" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.test resourceProcessing" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ContainerTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ContainerTest.testWrite_PreviousDataEmpty" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ContainerTest.testRead_SimpleData" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.ContainerTest.testPut_InvalidCmd01" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.ContainerTest.testPut_DataCastToArray" />
+      <item index="7" class="java.lang.String" itemvalue="JUnit.ContainerTest.testPut_NoSuchPath02" />
+      <item index="8" class="java.lang.String" itemvalue="Maven.jetty run" />
+      <item index="9" class="java.lang.String" itemvalue="JUnit.ContainerTest.testGetInstance_Empty" />
+      <item index="10" class="java.lang.String" itemvalue="JUnit.ContainerTest.testGetInstance_MinimalEmpty" />
+      <item index="11" class="java.lang.String" itemvalue="JUnit.ContainerTest.testGetInstance_MandatoryCmd" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.JSONPathTest.testTricky_3" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.JSONPathTest.testTricky_2" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.JSONPathTest.testTricky_1" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.JSONPathTest.testArray_4" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.JSONPathTest.testArray_2" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ContainerTest.testGetInstance_MandatoryCmd" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ContainerTest.testGetInstance_MinimalEmpty" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ContainerTest.testGetInstance_Empty" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1540,26 +1355,38 @@
       <created>1361289593655</created>
       <updated>1361289593655</updated>
     </task>
-    <task id="LOCAL-00035" summary="debugTraining">
-      <created>1363030486957</created>
-      <updated>1363030486957</updated>
+    <task id="LOCAL-00035" summary="update 01">
+      <created>1363037806692</created>
+      <updated>1363037806692</updated>
     </task>
-    <task id="LOCAL-00036" summary="JSONPath and JSONObject init">
-      <created>1364149914799</created>
-      <updated>1364149914799</updated>
+    <task id="LOCAL-00036" summary="update 02">
+      <created>1363037850820</created>
+      <updated>1363037850820</updated>
     </task>
-    <task id="LOCAL-00037" summary="JSONPath full JUnit">
-      <created>1364160451619</created>
-      <updated>1364160451619</updated>
+    <task id="LOCAL-00037" summary="update 03">
+      <created>1363043798053</created>
+      <updated>1363043798053</updated>
     </task>
-    <task id="LOCAL-00038" summary="JSONObject put test preparation">
-      <created>1364160842435</created>
-      <updated>1364160842435</updated>
+    <task id="LOCAL-00038" summary="update 04">
+      <created>1363046276014</created>
+      <updated>1363046276014</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="update 05">
+      <created>1363168807434</created>
+      <updated>1363168807434</updated>
+    </task>
+    <task id="LOCAL-00040" summary="update 06">
+      <created>1363252218928</created>
+      <updated>1363252218928</updated>
+    </task>
+    <task id="LOCAL-00041" summary="update 07">
+      <created>1363309780905</created>
+      <updated>1363309780905</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
-  <component name="TodoView" selected-index="4">
+  <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
       <are-packages-shown value="false" />
       <are-modules-shown value="false" />
@@ -1580,29 +1407,29 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-8" width="1936" height="1216" extended-state="6" />
+    <frame x="74" y="0" width="846" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23462631" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23362446" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4287072" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.44323143" sideWeight="0.9988208" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.6565752" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923368" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29372624" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="-1897" y="498" width="1874" height="203" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286026" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5338428" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="-1897" y="498" width="1874" height="203" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32889733" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286026" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18094218" sideWeight="0.615019" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18205349" sideWeight="0.4661572" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.40021345" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15899357" sideWeight="0.615019" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38498098" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23382226" sideWeight="0.4661572" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3842795" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32889733" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1648,9 +1475,9 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="JSONObject put test preparation" />
+    <option name="LAST_COMMIT_MESSAGE" value="update 07" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
-    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
@@ -1661,9 +1488,6 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="great progress CURL erased my quotes from JSON" />
-    <MESSAGE value="simple structure of FlexiContainer implemented, parsing &quot;cmd&quot; works well, but &quot;container&quot; and &quot;option&quot; must be JSONObject" />
-    <MESSAGE value="&quot;container&quot; and &quot;options&quot; now JSONObject" />
     <MESSAGE value="Smoke implementation of FlexiContainer done" />
     <MESSAGE value="new idea for FlexiContainer to extend JSONObject, just beginning" />
     <MESSAGE value="renaming FlexiContainer =&gt; Container" />
@@ -1682,10 +1506,13 @@
     <MESSAGE value="3-nd attempt for JUnit good simple testcases" />
     <MESSAGE value="test plan" />
     <MESSAGE value="new cases were covered" />
-    <MESSAGE value="debugTraining" />
-    <MESSAGE value="JSONPath and JSONObject init" />
-    <MESSAGE value="JSONPath full JUnit" />
-    <MESSAGE value="JSONObject put test preparation" />
+    <MESSAGE value="update 01" />
+    <MESSAGE value="update 02" />
+    <MESSAGE value="update 03" />
+    <MESSAGE value="update 04" />
+    <MESSAGE value="update 05" />
+    <MESSAGE value="update 06" />
+    <MESSAGE value="update 07" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1695,148 +1522,102 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.6.0_31/src.zip!/java/util/ArrayList.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar!/org/json/simple/JSONObject.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="274" column="0" selection-start="10149" selection-end="10149" vertical-scroll-proportion="0.30731708">
-          <folding />
-        </state>
+        <state line="9" column="11" selection-start="365" selection-end="365" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.6.0_31/src.zip!/java/util/AbstractMap.java">
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/internal/runners/statements/ExpectException.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="456" column="15" selection-start="14596" selection-end="14596" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dverbovskiy/debugTraining/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="343" selection-end="343" vertical-scroll-proportion="0.33366436">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.6.0_31/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="636" column="0" selection-start="24049" selection-end="24049" vertical-scroll-proportion="0.3327032">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/runners/ParentRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="25" selection-start="2400" selection-end="2400" vertical-scroll-proportion="0.34920636">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/rules/TestWatcher.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="12" column="16" selection-start="535" selection-end="535" vertical-scroll-proportion="-9.24" />
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="40" selection-start="388" selection-end="388" vertical-scroll-proportion="0.38602942">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.6.0_31/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="407" column="24" selection-start="18701" selection-end="18723" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#26304#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/dverbovskiy/web/rest/ContainerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="53" selection-start="1785" selection-end="1833" vertical-scroll-proportion="0.30066445">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="11" column="40" selection-start="388" selection-end="388" vertical-scroll-proportion="0.23523422" />
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/runners/model/FrameworkMethod.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="59" selection-start="598" selection-end="598" vertical-scroll-proportion="-0.20930232" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dverbovskiy/contacts/Facade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="44" selection-start="566" selection-end="566" vertical-scroll-proportion="0.23902439" />
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.6.0_38/src.zip!/java/lang/Character.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2055" column="11" selection-start="74933" selection-end="74933" vertical-scroll-proportion="-2.5541666" />
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.6.0_38/src.zip!/java/lang/Double.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="52" selection-start="1212" selection-end="1220" vertical-scroll-proportion="0.04375" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/dverbovskiy/web/rest/ContainerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="196" column="22" selection-start="6443" selection-end="6443" vertical-scroll-proportion="0.04375">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dverbovskiy/web/rest/Container.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="115" column="14" selection-start="3369" selection-end="3629" vertical-scroll-proportion="0.0">
+        <state line="118" column="22" selection-start="3752" selection-end="3752" vertical-scroll-proportion="0.04375">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dverbovskiy/json/JSONPath.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.6.0_38/src.zip!/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="36" selection-start="1446" selection-end="1446" vertical-scroll-proportion="0.77893174">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#399#410#0" expanded="true" />
-          </folding>
+        <state line="364" column="29" selection-start="17894" selection-end="17894" vertical-scroll-proportion="0.023755657">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dverbovskiy/json/JSONPathType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="90" selection-start="34" selection-end="192" vertical-scroll-proportion="0.12462908">
+        <state line="11" column="15" selection-start="314" selection-end="314" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/dverbovskiy/json/JSONPathTest.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.6.0_38/src.zip!/java/util/Collections.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="207" column="19" selection-start="6935" selection-end="6935" vertical-scroll-proportion="0.6097923">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#989#997#0" expanded="true" />
-            <element signature="e#1111#1119#0" expanded="true" />
-            <element signature="e#1298#1312#0" expanded="true" />
-            <element signature="e#1466#1480#0" expanded="true" />
-            <element signature="e#1831#1839#0" expanded="true" />
-            <element signature="e#1984#1992#0" expanded="true" />
-            <element signature="e#2211#2225#0" expanded="true" />
-            <element signature="e#2427#2441#0" expanded="true" />
-            <element signature="e#2832#2840#0" expanded="true" />
-            <element signature="e#2954#2962#0" expanded="true" />
-            <element signature="e#3141#3155#0" expanded="true" />
-            <element signature="e#3310#3324#0" expanded="true" />
-            <element signature="e#3674#3682#0" expanded="true" />
-            <element signature="e#3827#3835#0" expanded="true" />
-            <element signature="e#4054#4068#0" expanded="true" />
-            <element signature="e#4271#4285#0" expanded="true" />
-            <element signature="e#4679#4687#0" expanded="true" />
-            <element signature="e#4863#4871#0" expanded="true" />
-            <element signature="e#5130#5144#0" expanded="true" />
-            <element signature="e#5394#5408#0" expanded="true" />
-            <element signature="e#5846#5854#0" expanded="true" />
-            <element signature="e#6061#6069#0" expanded="true" />
-            <element signature="e#6368#6382#0" expanded="true" />
-            <element signature="e#6687#6701#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/dverbovskiy/json/JSONObjectTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="31" selection-start="796" selection-end="803" vertical-scroll-proportion="0.55711776">
+        <state line="1129" column="30" selection-start="47067" selection-end="47067" vertical-scroll-proportion="0.73978496">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dverbovskiy/json/JSONObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="11" selection-start="1101" selection-end="1101" vertical-scroll-proportion="-0.007194245">
+        <state line="56" column="44" selection-start="1380" selection-end="1380" vertical-scroll-proportion="1.0774194">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dverbovskiy/json/JsonPath.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="13" selection-start="1945" selection-end="1945" vertical-scroll-proportion="0.55053765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dverbovskiy/debugTraining/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="32" selection-start="278" selection-end="278" vertical-scroll-proportion="0.37656903">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#345#354#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

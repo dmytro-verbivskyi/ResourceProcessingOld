@@ -2,22 +2,28 @@ package dverbovskiy.debugTraining;
 
 import dverbovskiy.json.JSONObject;
 
+import java.util.*;
+
 public class Test {
-    public int div(int x, int y) {
-        return x / y / 0;
-    }
-
     public static void main(String[] a) {
-        Test f = new Test();
-        System.out.println( f.div(1, 2));
+        A aa = new A();
 
+        List temp = aa.pubList;
 
-        try {
-            JSONObject j = JSONObject.getInstance();
+        int yrt = 0;
 
-        } catch (Exception e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
-        }
+        temp.set(0, 123);
+        yrt = 3;
+    }
+}
 
+class A {
+    private List<Integer> list =  new ArrayList<Integer>();
+    public List<Integer> pubList = Collections.unmodifiableList(list);
+
+    A() {
+        list.add(100);
+        list.add(200);
+        list.add(300);
     }
 }
